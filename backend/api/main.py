@@ -37,17 +37,11 @@ app = FastAPI(
     version="0.1.0",
 )
 
-# CORS middleware for frontend
+# CORS middleware for frontend - allow all origins for cloud deployment
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:5174",
-        "http://localhost:3000",
-        "https://legal-lens-frontend.onrender.com",
-        "https://legallense-h1fh.onrender.com",
-    ],
-    allow_credentials=True,
+    allow_origins=["*"],
+    allow_credentials=False,  # Must be False when using "*"
     allow_methods=["*"],
     allow_headers=["*"],
 )

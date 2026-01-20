@@ -1,0 +1,37 @@
+[
+    {
+        "old_code": "IPC",
+        "old_section": "299",
+        "new_code": "BNS",
+        "new_section": "100",
+        "title": "Culpable homicide"
+    },
+    {
+        "old_code": "IPC",
+        "old_section": "300",
+        "new_code": "BNS",
+        "new_section": "101",
+        "title": "Murder"
+    },
+    {
+        "old_code": "IPC",
+        "old_section": "302",
+        "new_code": "BNS",
+        "new_section": "103",
+        "title": "Punishment for murder"
+    },
+    {
+        "old_code": "IPC",
+        "old_section": "304A",
+        "new_code": "BNS",
+        "new_section": "106",
+        "title": "Causing death by negligence"
+    },
+    {
+        "old_code": "CrPC",
+        "old_section": "154",
+        "new_code": "BNSS",
+        "new_section": "173",
+        "title": "Registration of FIR"
+    }
+]

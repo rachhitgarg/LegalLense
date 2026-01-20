@@ -1,0 +1,15 @@
+fastapi>=0.110.0
+uvicorn>=0.27.0
+pydantic>=2.0.0
+python-dotenv>=1.0.0
+openai>=1.10.0
+pyjwt>=2.8.0
+qdrant-client>=1.7.0
+neo4j>=5.15.0
+pdfminer.six>=20221105
+sentence-transformers>=2.2.0
+FlagEmbedding>=1.2.0
+elasticsearch>=8.12.0
+httpx>=0.26.0
+pytest>=8.0.0
+pytest-asyncio>=0.23.0

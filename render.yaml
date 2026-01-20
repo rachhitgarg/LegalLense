@@ -1,0 +1,38 @@
+# Render Blueprint for Legal Lens
+# Deploy both backend and frontend in one click
+
+services:
+  # Backend API (Python/FastAPI)
+  - type: web
+    name: legal-lens-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT
+    rootDir: backend
+    envVars:
+      - key: QDRANT_CLOUD_URL
+        sync: false
+      - key: QDRANT_API_KEY
+        sync: false
+      - key: NEO4J_URI
+        sync: false
+      - key: NEO4J_USER
+        sync: false
+      - key: NEO4J_PASSWORD
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+
+  # Frontend (React/Vite)
+  - type: web
+    name: legal-lens-frontend
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    rootDir: frontend
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: no-cache

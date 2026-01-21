@@ -36,20 +36,30 @@ class FAISSSearchEngine:
     No external services required!
     """
     
-    def __init__(self, data_dir: str = "../data", model_name: str = "all-MiniLM-L6-v2"):
-        self.data_dir = Path(data_dir)
+    def __init__(self, data_dir: str = None, model_name: str = "all-MiniLM-L6-v2"):
+        # Use absolute path based on this file's location
+        if data_dir is None:
+            self.data_dir = Path(__file__).parent.parent / "data"
+        else:
+            self.data_dir = Path(data_dir)
+        
         self.model_name = model_name
         self.documents = []
         self.index = None
         self.model = None
+        self.embeddings = None
         
         # File paths
         self.docs_file = self.data_dir / "documents.json"
         self.index_file = self.data_dir / "faiss_index.pkl"
         
-        # Initialize
+        # Initialize - always load documents first
+        self._create_default_documents()  # Always ensure we have documents
         self._load_model()
-        self._load_or_create_index()
+        
+        # Try to build/load index only if model loaded
+        if self.model:
+            self._try_build_index()
     
     def _load_model(self):
         """Load the embedding model."""
@@ -58,8 +68,15 @@ class FAISSSearchEngine:
             self.model = SentenceTransformer(self.model_name)
             print(f"[FAISS] Loaded embedding model: {self.model_name}")
         except Exception as e:
-            print(f"[FAISS] Error loading model: {e}")
+            print(f"[FAISS] Error loading model: {e} - falling back to keyword search")
             self.model = None
+    
+    def _try_build_index(self):
+        """Try to build index, with fallbacks."""
+        try:
+            self._build_numpy_index()
+        except Exception as e:
+            print(f"[FAISS] Could not build index: {e}")
     
     def _load_or_create_index(self):
         """Load existing index or create new one."""
@@ -405,7 +422,7 @@ This case is significant for:
 # Singleton instance
 _search_engine = None
 
-def get_search_engine(data_dir: str = "../data") -> FAISSSearchEngine:
+def get_search_engine(data_dir: str = None) -> FAISSSearchEngine:
     """Get or create the FAISS search engine instance."""
     global _search_engine
     if _search_engine is None:

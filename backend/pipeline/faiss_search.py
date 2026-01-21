@@ -30,53 +30,87 @@ class SearchResult:
 
 class FAISSSearchEngine:
     """
-    FAISS-based semantic search engine.
+    Lightweight search engine using TF-IDF style keyword matching.
     
-    Uses sentence-transformers for embeddings and FAISS for similarity search.
-    No external services required!
+    No heavy ML dependencies - works on Render free tier!
     """
     
-    def __init__(self, data_dir: str = None, model_name: str = "all-MiniLM-L6-v2"):
+    def __init__(self, data_dir: str = None):
         # Use absolute path based on this file's location
         if data_dir is None:
             self.data_dir = Path(__file__).parent.parent / "data"
         else:
             self.data_dir = Path(data_dir)
         
-        self.model_name = model_name
         self.documents = []
-        self.index = None
-        self.model = None
-        self.embeddings = None
         
         # File paths
         self.docs_file = self.data_dir / "documents.json"
-        self.index_file = self.data_dir / "faiss_index.pkl"
         
-        # Initialize - always load documents first
-        self._create_default_documents()  # Always ensure we have documents
-        self._load_model()
+        # Initialize - always load documents
+        self._create_default_documents()
+        print(f"[Search] Loaded {len(self.documents)} documents")
+    
+    def search(self, query: str, top_k: int = 5) -> List[SearchResult]:
+        """
+        Search using TF-IDF style keyword matching.
+        Works without any heavy ML dependencies!
+        """
+        query_lower = query.lower()
+        query_words = [w for w in query_lower.split() if len(w) > 2]
         
-        # Try to build/load index only if model loaded
-        if self.model:
-            self._try_build_index()
+        results = []
+        
+        for doc in self.documents:
+            score = self._calculate_score(query_words, doc)
+            
+            if score > 0:
+                results.append(SearchResult(
+                    doc_id=doc["doc_id"],
+                    title=doc.get("title", ""),
+                    content=doc["content"][:500],
+                    score=min(score, 1.0),
+                    source="keyword",
+                    metadata={
+                        "year": doc.get("year"),
+                        "court": doc.get("court"),
+                        "statutes": doc.get("statutes", [])
+                    }
+                ))
+        
+        # Sort by score
+        results.sort(key=lambda x: x.score, reverse=True)
+        return results[:top_k]
     
-    def _load_model(self):
-        """Load the embedding model."""
-        try:
-            from sentence_transformers import SentenceTransformer
-            self.model = SentenceTransformer(self.model_name)
-            print(f"[FAISS] Loaded embedding model: {self.model_name}")
-        except Exception as e:
-            print(f"[FAISS] Error loading model: {e} - falling back to keyword search")
-            self.model = None
-    
-    def _try_build_index(self):
-        """Try to build index, with fallbacks."""
-        try:
-            self._build_numpy_index()
-        except Exception as e:
-            print(f"[FAISS] Could not build index: {e}")
+    def _calculate_score(self, query_words: List[str], doc: Dict) -> float:
+        """Calculate relevance score using TF-IDF style matching."""
+        score = 0.0
+        
+        title = doc.get("title", "").lower()
+        content = doc.get("content", "").lower()
+        keywords = [k.lower() for k in doc.get("keywords", [])]
+        
+        for word in query_words:
+            # Title match (highest weight)
+            if word in title:
+                score += 0.3
+            
+            # Keyword match (high weight)
+            for kw in keywords:
+                if word in kw or kw in word:
+                    score += 0.25
+            
+            # Content match
+            count = content.count(word)
+            score += min(count * 0.02, 0.2)  # Cap content contribution
+        
+        # Statute mention bonus
+        statutes = " ".join(doc.get("statutes", [])).lower()
+        for word in query_words:
+            if word in statutes:
+                score += 0.15
+        
+        return score
     
     def _load_or_create_index(self):
         """Load existing index or create new one."""

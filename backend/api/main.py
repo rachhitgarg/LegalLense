@@ -118,34 +118,43 @@ async def search(
     user: TokenPayload = Depends(require_student_or_practitioner),
 ):
     """
-    Search legal documents using Qdrant vector search + LLM.
-    
-    Requires authentication (practitioner or student).
+    Search legal documents using Qdrant + LLM (Groq or OpenAI).
     """
+    import httpx
     from qdrant_client import QdrantClient
-    from sentence_transformers import SentenceTransformer
-    from openai import OpenAI
     
     timestamp = datetime.utcnow().isoformat()
     
     # Get credentials
     cloud_url = os.getenv("QDRANT_CLOUD_URL")
     qdrant_key = os.getenv("QDRANT_API_KEY")
+    groq_key = os.getenv("GROQ_API_KEY", "")
     openai_key = os.getenv("OPENAI_API_KEY", "")
     
     results = []
     llm_response = ""
     
     try:
-        # Use a smaller, faster model for cloud deployment
-        model = SentenceTransformer("all-MiniLM-L6-v2")
-        query_vector = model.encode(request.query).tolist()
-        
         # Connect to Qdrant Cloud
-        client = QdrantClient(url=cloud_url, api_key=qdrant_key)
+        qdrant = QdrantClient(url=cloud_url, api_key=qdrant_key)
         
-        # Search
-        search_results = client.search(
+        # Get collection info to check vector size
+        collection = qdrant.get_collection("legal_documents")
+        vector_size = collection.config.params.vectors.size
+        
+        # Use appropriate model based on collection vector size
+        if vector_size == 1024:
+            from FlagEmbedding import BGEM3FlagModel
+            model = BGEM3FlagModel("BAAI/bge-m3", use_fp16=True)
+            embeddings = model.encode([request.query])
+            query_vector = embeddings["dense_vecs"][0].tolist()
+        else:
+            from sentence_transformers import SentenceTransformer
+            model = SentenceTransformer("all-MiniLM-L6-v2")
+            query_vector = model.encode(request.query).tolist()
+        
+        # Search Qdrant
+        search_results = qdrant.search(
             collection_name="legal_documents",
             query_vector=query_vector,
             limit=request.top_k,
@@ -165,33 +174,53 @@ async def search(
             for r in results[:3]
         ])
         
-        # Generate LLM response
-        if openai_key and not openai_key.startswith("YOUR_"):
+        # Try Groq first (faster), then OpenAI
+        if groq_key:
             try:
-                client = OpenAI(api_key=openai_key)
-                response = client.chat.completions.create(
-                    model="gpt-4o-mini",
-                    messages=[
-                        {"role": "system", "content": "You are a legal research assistant. Summarize the relevant legal information based on the provided documents."},
-                        {"role": "user", "content": f"Query: {request.query}\n\nDocuments:\n{context}"}
-                    ],
-                    max_tokens=500
-                )
-                llm_response = response.choices[0].message.content
+                async with httpx.AsyncClient() as client:
+                    response = await client.post(
+                        "https://api.groq.com/openai/v1/chat/completions",
+                        headers={"Authorization": f"Bearer {groq_key}"},
+                        json={
+                            "model": "llama-3.1-8b-instant",
+                            "messages": [
+                                {"role": "system", "content": "You are a legal research assistant. Provide concise summaries."},
+                                {"role": "user", "content": f"Query: {request.query}\n\nDocuments:\n{context}"}
+                            ],
+                            "max_tokens": 500
+                        },
+                        timeout=30.0
+                    )
+                    data = response.json()
+                    llm_response = data["choices"][0]["message"]["content"]
             except Exception as e:
-                llm_response = f"AI Summary unavailable: {str(e)}"
+                llm_response = f"Groq error: {str(e)}"
+        elif openai_key and not openai_key.startswith("YOUR_"):
+            from openai import OpenAI
+            client = OpenAI(api_key=openai_key)
+            response = client.chat.completions.create(
+                model="gpt-4o-mini",
+                messages=[
+                    {"role": "system", "content": "You are a legal research assistant."},
+                    {"role": "user", "content": f"Query: {request.query}\n\nDocuments:\n{context}"}
+                ],
+                max_tokens=500
+            )
+            llm_response = response.choices[0].message.content
         else:
-            llm_response = "Set OPENAI_API_KEY for AI summaries."
+            llm_response = "Set GROQ_API_KEY or OPENAI_API_KEY for AI summaries."
             
     except Exception as e:
-        # Return error details for debugging
+        # Return error with details
+        import traceback
+        error_details = f"{str(e)}\n{traceback.format_exc()}"
         results = [SearchResult(
             doc_id="error",
-            content=f"Search error: {str(e)}",
+            content=f"Search error: {str(e)[:200]}",
             score=0.0,
             source="error",
         )]
-        llm_response = f"Error: {str(e)}"
+        llm_response = f"Error: {str(e)[:300]}"
     
     # Log the search
     _save_to_history(user.sub, request.query, llm_response, timestamp)

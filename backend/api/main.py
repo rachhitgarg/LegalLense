@@ -118,16 +118,22 @@ async def search(
     user: TokenPayload = Depends(require_student_or_practitioner),
 ):
     """
-    Search legal documents using Qdrant + LLM (Groq or OpenAI).
+    Search legal documents using local search + LLM (Groq or OpenAI).
+    
+    No external vector database required!
     """
     import httpx
-    from qdrant_client import QdrantClient
+    import sys
+    from pathlib import Path
+    
+    # Add parent to path for imports
+    sys.path.insert(0, str(Path(__file__).parent.parent))
+    from pipeline.local_search import get_search_engine
+    from pipeline.graph_local import get_knowledge_graph
     
     timestamp = datetime.utcnow().isoformat()
     
-    # Get credentials
-    cloud_url = os.getenv("QDRANT_CLOUD_URL")
-    qdrant_key = os.getenv("QDRANT_API_KEY")
+    # Get LLM credentials
     groq_key = os.getenv("GROQ_API_KEY", "")
     openai_key = os.getenv("OPENAI_API_KEY", "")
     
@@ -135,44 +141,45 @@ async def search(
     llm_response = ""
     
     try:
-        # Connect to Qdrant Cloud
-        qdrant = QdrantClient(url=cloud_url, api_key=qdrant_key)
-        
-        # Get collection info to check vector size
-        collection = qdrant.get_collection("legal_documents")
-        vector_size = collection.config.params.vectors.size
-        
-        # Use appropriate model based on collection vector size
-        if vector_size == 1024:
-            from FlagEmbedding import BGEM3FlagModel
-            model = BGEM3FlagModel("BAAI/bge-m3", use_fp16=True)
-            embeddings = model.encode([request.query])
-            query_vector = embeddings["dense_vecs"][0].tolist()
-        else:
-            from sentence_transformers import SentenceTransformer
-            model = SentenceTransformer("all-MiniLM-L6-v2")
-            query_vector = model.encode(request.query).tolist()
-        
-        # Search Qdrant
-        search_results = qdrant.search(
-            collection_name="legal_documents",
-            query_vector=query_vector,
-            limit=request.top_k,
-        )
+        # Use local search engine
+        search_engine = get_search_engine()
+        search_results = search_engine.search(request.query, top_k=request.top_k)
         
         for r in search_results:
             results.append(SearchResult(
-                doc_id=r.payload.get("doc_id", r.payload.get("filename", str(r.id))),
-                content=r.payload.get("content_preview", r.payload.get("content", ""))[:500],
+                doc_id=r.doc_id,
+                content=r.content,
                 score=r.score,
-                source="vector",
+                source=r.source,
             ))
+        
+        # Check for statute references in query
+        kg = get_knowledge_graph()
+        statute_info = ""
+        
+        # Look for IPC/BNS section references in query
+        import re
+        ipc_match = re.search(r'(IPC|ipc)\s*(\d+)', request.query)
+        bns_match = re.search(r'(BNS|bns)\s*(\d+)', request.query)
+        
+        if ipc_match:
+            section = ipc_match.group(2)
+            mapping = kg.get_mapping("IPC", section)
+            if mapping:
+                statute_info = f"\n\nStatute Mapping: {mapping['mapping']}"
+        elif bns_match:
+            section = bns_match.group(2)
+            # Search for BNS to find corresponding IPC
+            statute_results = kg.search_statutes(f"BNS {section}")
+            if statute_results:
+                statute_info = f"\n\nRelated statute: {statute_results[0]}"
         
         # Build context for LLM
         context = "\n\n".join([
             f"Document: {r.doc_id}\n{r.content}"
             for r in results[:3]
         ])
+        context += statute_info
         
         # Try Groq first (faster), then OpenAI
         if groq_key:
@@ -184,7 +191,7 @@ async def search(
                         json={
                             "model": "llama-3.1-8b-instant",
                             "messages": [
-                                {"role": "system", "content": "You are a legal research assistant. Provide concise summaries."},
+                                {"role": "system", "content": "You are a legal research assistant for Indian law. Provide concise, accurate summaries based on the documents provided. If statute mappings are shown, explain the correspondence between old (IPC/CrPC) and new (BNS/BNSS) laws."},
                                 {"role": "user", "content": f"Query: {request.query}\n\nDocuments:\n{context}"}
                             ],
                             "max_tokens": 500
@@ -192,7 +199,10 @@ async def search(
                         timeout=30.0
                     )
                     data = response.json()
-                    llm_response = data["choices"][0]["message"]["content"]
+                    if "choices" in data:
+                        llm_response = data["choices"][0]["message"]["content"]
+                    else:
+                        llm_response = f"Groq API response: {data.get('error', {}).get('message', str(data))}"
             except Exception as e:
                 llm_response = f"Groq error: {str(e)}"
         elif openai_key and not openai_key.startswith("YOUR_"):
@@ -201,26 +211,26 @@ async def search(
             response = client.chat.completions.create(
                 model="gpt-4o-mini",
                 messages=[
-                    {"role": "system", "content": "You are a legal research assistant."},
+                    {"role": "system", "content": "You are a legal research assistant for Indian law."},
                     {"role": "user", "content": f"Query: {request.query}\n\nDocuments:\n{context}"}
                 ],
                 max_tokens=500
             )
             llm_response = response.choices[0].message.content
         else:
-            llm_response = "Set GROQ_API_KEY or OPENAI_API_KEY for AI summaries."
+            # No LLM - just return search results
+            llm_response = f"Found {len(results)} relevant documents. Set GROQ_API_KEY for AI-powered summaries."
             
     except Exception as e:
-        # Return error with details
         import traceback
-        error_details = f"{str(e)}\n{traceback.format_exc()}"
+        error_msg = str(e)
         results = [SearchResult(
             doc_id="error",
-            content=f"Search error: {str(e)[:200]}",
+            content=f"Search error: {error_msg[:300]}",
             score=0.0,
             source="error",
         )]
-        llm_response = f"Error: {str(e)[:300]}"
+        llm_response = f"Error: {error_msg[:200]}"
     
     # Log the search
     _save_to_history(user.sub, request.query, llm_response, timestamp)

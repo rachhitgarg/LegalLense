@@ -118,32 +118,35 @@ async def search(
     user: TokenPayload = Depends(require_student_or_practitioner),
 ):
     """
-    Search legal documents using local search + LLM (Groq or OpenAI).
-    
-    No external vector database required!
+    RAG-powered legal search using:
+    - Semantic search with OpenAI embeddings
+    - Knowledge Graph for statute mappings
+    - Groq LLM for answer generation
     """
     import httpx
     import sys
+    import re
     from pathlib import Path
     
     # Add parent to path for imports
     sys.path.insert(0, str(Path(__file__).parent.parent))
-    from pipeline.faiss_search import get_search_engine
+    from pipeline.semantic_search import get_search_engine
     from pipeline.graph_local import get_knowledge_graph
     
     timestamp = datetime.utcnow().isoformat()
     
-    # Get LLM credentials
+    # Get API keys
     groq_key = os.getenv("GROQ_API_KEY", "")
     openai_key = os.getenv("OPENAI_API_KEY", "")
     
     results = []
     llm_response = ""
+    kg_info = ""
     
     try:
-        # Use local search engine
+        # 1. SEMANTIC SEARCH - Get relevant documents
         search_engine = get_search_engine()
-        search_results = search_engine.search(request.query, top_k=request.top_k)
+        search_results = await search_engine.search(request.query, top_k=request.top_k)
         
         for r in search_results:
             results.append(SearchResult(
@@ -153,12 +156,11 @@ async def search(
                 source=r.source,
             ))
         
-        # Check for statute references in query
+        # 2. KNOWLEDGE GRAPH - Check for statute references
         kg = get_knowledge_graph()
         statute_info = ""
         
         # Look for IPC/BNS section references in query
-        import re
         ipc_match = re.search(r'(IPC|ipc)\s*(\d+)', request.query)
         bns_match = re.search(r'(BNS|bns)\s*(\d+)', request.query)
         

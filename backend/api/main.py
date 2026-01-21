@@ -128,7 +128,7 @@ async def search(
     
     # Add parent to path for imports
     sys.path.insert(0, str(Path(__file__).parent.parent))
-    from pipeline.local_search import get_search_engine
+    from pipeline.faiss_search import get_search_engine
     from pipeline.graph_local import get_knowledge_graph
     
     timestamp = datetime.utcnow().isoformat()

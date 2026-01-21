@@ -1,0 +1,658 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "302",
+      "description": "",
+      "id": "IPC_302"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "101",
+      "description": "",
+      "id": "BNS_101"
+    },
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "304",
+      "description": "Culpable homicide not amounting to murder",
+      "id": "IPC_304"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "105",
+      "description": "Culpable homicide not amounting to murder",
+      "id": "BNS_105"
+    },
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "304A",
+      "description": "",
+      "id": "IPC_304A"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "106",
+      "description": "",
+      "id": "BNS_106"
+    },
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "307",
+      "description": "Attempt to murder",
+      "id": "IPC_307"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "109",
+      "description": "Attempt to murder",
+      "id": "BNS_109"
+    },
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "376",
+      "description": "Rape",
+      "id": "IPC_376"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "63",
+      "description": "Rape",
+      "id": "BNS_63"
+    },
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "377",
+      "description": "Unnatural offences (partially decriminalized)",
+      "id": "IPC_377"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "None",
+      "description": "Unnatural offences (partially decriminalized)",
+      "id": "BNS_None"
+    },
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "420",
+      "description": "Cheating and dishonestly inducing delivery",
+      "id": "IPC_420"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "316",
+      "description": "Cheating and dishonestly inducing delivery",
+      "id": "BNS_316"
+    },
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "498A",
+      "description": "Cruelty by husband or relatives",
+      "id": "IPC_498A"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "84",
+      "description": "Cruelty by husband or relatives",
+      "id": "BNS_84"
+    },
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "499",
+      "description": "Defamation",
+      "id": "IPC_499"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "354",
+      "description": "Defamation",
+      "id": "BNS_354"
+    },
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "506",
+      "description": "Criminal intimidation",
+      "id": "IPC_506"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "349",
+      "description": "Criminal intimidation",
+      "id": "BNS_349"
+    },
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "299",
+      "description": "",
+      "id": "IPC_299"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "100",
+      "description": "",
+      "id": "BNS_100"
+    },
+    {
+      "type": "old_statute",
+      "code": "IPC",
+      "section": "300",
+      "description": "",
+      "id": "IPC_300"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNS",
+      "section": "103",
+      "description": "",
+      "id": "BNS_103"
+    },
+    {
+      "type": "old_statute",
+      "code": "CrPC",
+      "section": "154",
+      "description": "",
+      "id": "CrPC_154"
+    },
+    {
+      "type": "new_statute",
+      "code": "BNSS",
+      "section": "173",
+      "description": "",
+      "id": "BNSS_173"
+    },
+    {
+      "type": "judgment",
+      "title": "Jacob Mathew vs State of Punjab",
+      "year": 2005,
+      "court": "Supreme Court of India",
+      "summary": "Established guidelines for medical negligence prosecution",
+      "id": "jacob_mathew_2005"
+    },
+    {
+      "type": "concept",
+      "name": "Medical Negligence",
+      "id": "medical_negligence"
+    },
+    {
+      "type": "concept",
+      "name": "Professional Liability",
+      "id": "professional_liability"
+    },
+    {
+      "type": "judgment",
+      "title": "Kesavananda Bharati vs State of Kerala",
+      "year": 1973,
+      "court": "Supreme Court of India",
+      "summary": "Established Basic Structure Doctrine limiting Parliament's amending power",
+      "id": "kesavananda_bharati_1973"
+    },
+    {
+      "type": "statute_reference",
+      "code": "Article",
+      "section": "368",
+      "id": "Article_368"
+    },
+    {
+      "type": "statute_reference",
+      "code": "Article",
+      "section": "13",
+      "id": "Article_13"
+    },
+    {
+      "type": "concept",
+      "name": "Basic Structure",
+      "id": "basic_structure"
+    },
+    {
+      "type": "concept",
+      "name": "Constitutional Amendment",
+      "id": "constitutional_amendment"
+    },
+    {
+      "type": "judgment",
+      "title": "Navtej Singh Johar vs Union of India",
+      "year": 2018,
+      "court": "Supreme Court of India",
+      "summary": "Decriminalized consensual homosexual acts by reading down Section 377",
+      "id": "navtej_johar_2018"
+    },
+    {
+      "type": "statute_reference",
+      "code": "Article",
+      "section": "14",
+      "id": "Article_14"
+    },
+    {
+      "type": "statute_reference",
+      "code": "Article",
+      "section": "21",
+      "id": "Article_21"
+    },
+    {
+      "type": "concept",
+      "name": "Right To Privacy",
+      "id": "right_to_privacy"
+    },
+    {
+      "type": "concept",
+      "name": "Lgbtq Rights",
+      "id": "lgbtq_rights"
+    },
+    {
+      "type": "concept",
+      "name": "Equality",
+      "id": "equality"
+    },
+    {
+      "type": "judgment",
+      "title": "K.S. Puttaswamy vs Union of India",
+      "year": 2017,
+      "court": "Supreme Court of India",
+      "summary": "Right to Privacy declared a fundamental right under Article 21",
+      "id": "puttaswamy_2017"
+    },
+    {
+      "type": "statute_reference",
+      "code": "Article",
+      "section": "19",
+      "id": "Article_19"
+    },
+    {
+      "type": "concept",
+      "name": "Data Protection",
+      "id": "data_protection"
+    },
+    {
+      "type": "concept",
+      "name": "Fundamental Rights",
+      "id": "fundamental_rights"
+    },
+    {
+      "type": "judgment",
+      "title": "Vineeta Sharma vs Rakesh Sharma",
+      "year": 2020,
+      "court": "Supreme Court of India",
+      "summary": "Daughters have equal coparcenary rights by birth",
+      "id": "vineeta_sharma_2020"
+    },
+    {
+      "type": "statute_reference",
+      "code": "Hindu",
+      "section": "Succession",
+      "id": "Hindu_Succession_Act"
+    },
+    {
+      "type": "concept",
+      "name": "Gender Equality",
+      "id": "gender_equality"
+    },
+    {
+      "type": "concept",
+      "name": "Property Rights",
+      "id": "property_rights"
+    },
+    {
+      "type": "concept",
+      "name": "Inheritance",
+      "id": "inheritance"
+    },
+    {
+      "type": "judgment",
+      "title": "Maneka Gandhi vs Union of India",
+      "year": 1978,
+      "court": "Supreme Court of India",
+      "summary": "Expanded Article 21 to include right to live with dignity",
+      "id": "maneka_gandhi_1978"
+    },
+    {
+      "type": "concept",
+      "name": "Right To Life",
+      "id": "right_to_life"
+    },
+    {
+      "type": "concept",
+      "name": "Due Process",
+      "id": "due_process"
+    },
+    {
+      "type": "concept",
+      "name": "Natural Justice",
+      "id": "natural_justice"
+    },
+    {
+      "type": "judgment",
+      "title": "Vishaka vs State of Rajasthan",
+      "year": 1997,
+      "court": "Supreme Court of India",
+      "summary": "Laid down guidelines for prevention of sexual harassment at workplace",
+      "id": "vishaka_1997"
+    },
+    {
+      "type": "concept",
+      "name": "Sexual Harassment",
+      "id": "sexual_harassment"
+    },
+    {
+      "type": "concept",
+      "name": "Womens Rights",
+      "id": "womens_rights"
+    },
+    {
+      "type": "concept",
+      "name": "Workplace Safety",
+      "id": "workplace_safety"
+    }
+  ],
+  "links": [
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_302",
+      "target": "BNS_101"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_302",
+      "target": "BNS_103"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_304",
+      "target": "BNS_105"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_304A",
+      "target": "BNS_106"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_307",
+      "target": "BNS_109"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_376",
+      "target": "BNS_63"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_377",
+      "target": "BNS_None"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_420",
+      "target": "BNS_316"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_498A",
+      "target": "BNS_84"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_499",
+      "target": "BNS_354"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_506",
+      "target": "BNS_349"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_299",
+      "target": "BNS_100"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "IPC_300",
+      "target": "BNS_101"
+    },
+    {
+      "relationship": "REPLACED_BY",
+      "source": "CrPC_154",
+      "target": "BNSS_173"
+    },
+    {
+      "relationship": "CITES",
+      "source": "jacob_mathew_2005",
+      "target": "IPC_304A"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "jacob_mathew_2005",
+      "target": "medical_negligence"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "jacob_mathew_2005",
+      "target": "professional_liability"
+    },
+    {
+      "relationship": "SUBSET_OF",
+      "source": "medical_negligence",
+      "target": "professional_liability"
+    },
+    {
+      "relationship": "CITES",
+      "source": "kesavananda_bharati_1973",
+      "target": "Article_368"
+    },
+    {
+      "relationship": "CITES",
+      "source": "kesavananda_bharati_1973",
+      "target": "Article_13"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "kesavananda_bharati_1973",
+      "target": "basic_structure"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "kesavananda_bharati_1973",
+      "target": "constitutional_amendment"
+    },
+    {
+      "relationship": "CITES",
+      "source": "navtej_johar_2018",
+      "target": "IPC_377"
+    },
+    {
+      "relationship": "CITES",
+      "source": "navtej_johar_2018",
+      "target": "Article_14"
+    },
+    {
+      "relationship": "CITES",
+      "source": "navtej_johar_2018",
+      "target": "Article_21"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "navtej_johar_2018",
+      "target": "right_to_privacy"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "navtej_johar_2018",
+      "target": "lgbtq_rights"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "navtej_johar_2018",
+      "target": "equality"
+    },
+    {
+      "relationship": "PART_OF",
+      "source": "right_to_privacy",
+      "target": "fundamental_rights"
+    },
+    {
+      "relationship": "RELATED_TO",
+      "source": "lgbtq_rights",
+      "target": "equality"
+    },
+    {
+      "relationship": "PART_OF",
+      "source": "equality",
+      "target": "fundamental_rights"
+    },
+    {
+      "relationship": "CITES",
+      "source": "puttaswamy_2017",
+      "target": "Article_21"
+    },
+    {
+      "relationship": "CITES",
+      "source": "puttaswamy_2017",
+      "target": "Article_14"
+    },
+    {
+      "relationship": "CITES",
+      "source": "puttaswamy_2017",
+      "target": "Article_19"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "puttaswamy_2017",
+      "target": "right_to_privacy"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "puttaswamy_2017",
+      "target": "data_protection"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "puttaswamy_2017",
+      "target": "fundamental_rights"
+    },
+    {
+      "relationship": "SUBSET_OF",
+      "source": "data_protection",
+      "target": "right_to_privacy"
+    },
+    {
+      "relationship": "CITES",
+      "source": "vineeta_sharma_2020",
+      "target": "Hindu_Succession_Act"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "vineeta_sharma_2020",
+      "target": "gender_equality"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "vineeta_sharma_2020",
+      "target": "property_rights"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "vineeta_sharma_2020",
+      "target": "inheritance"
+    },
+    {
+      "relationship": "SUBSET_OF",
+      "source": "gender_equality",
+      "target": "equality"
+    },
+    {
+      "relationship": "CITES",
+      "source": "maneka_gandhi_1978",
+      "target": "Article_21"
+    },
+    {
+      "relationship": "CITES",
+      "source": "maneka_gandhi_1978",
+      "target": "Article_14"
+    },
+    {
+      "relationship": "CITES",
+      "source": "maneka_gandhi_1978",
+      "target": "Article_19"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "maneka_gandhi_1978",
+      "target": "right_to_life"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "maneka_gandhi_1978",
+      "target": "due_process"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "maneka_gandhi_1978",
+      "target": "natural_justice"
+    },
+    {
+      "relationship": "PART_OF",
+      "source": "right_to_life",
+      "target": "fundamental_rights"
+    },
+    {
+      "relationship": "RELATED_TO",
+      "source": "due_process",
+      "target": "natural_justice"
+    },
+    {
+      "relationship": "CITES",
+      "source": "vishaka_1997",
+      "target": "Article_14"
+    },
+    {
+      "relationship": "CITES",
+      "source": "vishaka_1997",
+      "target": "Article_19"
+    },
+    {
+      "relationship": "CITES",
+      "source": "vishaka_1997",
+      "target": "Article_21"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "vishaka_1997",
+      "target": "sexual_harassment"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "vishaka_1997",
+      "target": "womens_rights"
+    },
+    {
+      "relationship": "INTERPRETS",
+      "source": "vishaka_1997",
+      "target": "workplace_safety"
+    }
+  ]
+}

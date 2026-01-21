@@ -118,71 +118,80 @@ async def search(
     user: TokenPayload = Depends(require_student_or_practitioner),
 ):
     """
-    Search legal documents using fusion retrieval + LLM.
+    Search legal documents using Qdrant vector search + LLM.
     
     Requires authentication (practitioner or student).
     """
-    import sys
-    from pathlib import Path
-    sys.path.insert(0, str(Path(__file__).parent.parent))
-    
-    from pipeline.embeddings import EmbeddingService
-    from llm.online_client import OnlineLLMClient
+    from qdrant_client import QdrantClient
+    from sentence_transformers import SentenceTransformer
+    from openai import OpenAI
     
     timestamp = datetime.utcnow().isoformat()
     
-    # Get Qdrant credentials
+    # Get credentials
     cloud_url = os.getenv("QDRANT_CLOUD_URL")
-    api_key = os.getenv("QDRANT_API_KEY")
+    qdrant_key = os.getenv("QDRANT_API_KEY")
+    openai_key = os.getenv("OPENAI_API_KEY", "")
     
     results = []
     llm_response = ""
     
     try:
-        # Initialize embedding service
-        embedding_service = EmbeddingService(
-            cloud_url=cloud_url,
-            api_key=api_key,
-            model_name="BAAI/bge-m3"
-        )
+        # Use a smaller, faster model for cloud deployment
+        model = SentenceTransformer("all-MiniLM-L6-v2")
+        query_vector = model.encode(request.query).tolist()
         
-        # Search Qdrant
-        search_results = embedding_service.search(request.query, top_k=request.top_k)
+        # Connect to Qdrant Cloud
+        client = QdrantClient(url=cloud_url, api_key=qdrant_key)
+        
+        # Search
+        search_results = client.search(
+            collection_name="legal_documents",
+            query_vector=query_vector,
+            limit=request.top_k,
+        )
         
         for r in search_results:
             results.append(SearchResult(
-                doc_id=r["payload"].get("doc_id", str(r["id"])),
-                content=r["payload"].get("content_preview", "")[:500],
-                score=r["score"],
+                doc_id=r.payload.get("doc_id", r.payload.get("filename", str(r.id))),
+                content=r.payload.get("content_preview", r.payload.get("content", ""))[:500],
+                score=r.score,
                 source="vector",
             ))
         
         # Build context for LLM
         context = "\n\n".join([
             f"Document: {r.doc_id}\n{r.content}"
-            for r in results[:5]
+            for r in results[:3]
         ])
         
         # Generate LLM response
-        openai_key = os.getenv("OPENAI_API_KEY", "")
         if openai_key and not openai_key.startswith("YOUR_"):
             try:
-                llm_client = OnlineLLMClient(api_key=openai_key)
-                llm_response = llm_client.generate(request.query, context)
+                client = OpenAI(api_key=openai_key)
+                response = client.chat.completions.create(
+                    model="gpt-4o-mini",
+                    messages=[
+                        {"role": "system", "content": "You are a legal research assistant. Summarize the relevant legal information based on the provided documents."},
+                        {"role": "user", "content": f"Query: {request.query}\n\nDocuments:\n{context}"}
+                    ],
+                    max_tokens=500
+                )
+                llm_response = response.choices[0].message.content
             except Exception as e:
-                llm_response = f"LLM error: {str(e)}"
+                llm_response = f"AI Summary unavailable: {str(e)}"
         else:
-            llm_response = "Set your OPENAI_API_KEY in .env for AI-powered summaries."
+            llm_response = "Set OPENAI_API_KEY for AI summaries."
             
     except Exception as e:
-        # Fallback to placeholder if services unavailable
+        # Return error details for debugging
         results = [SearchResult(
             doc_id="error",
             content=f"Search error: {str(e)}",
             score=0.0,
             source="error",
         )]
-        llm_response = f"Error connecting to search services: {str(e)}"
+        llm_response = f"Error: {str(e)}"
     
     # Log the search
     _save_to_history(user.sub, request.query, llm_response, timestamp)

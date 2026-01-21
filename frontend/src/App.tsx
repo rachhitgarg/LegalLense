@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
-// API URL - change this for production deployment
-const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000'
+// API URL - use /api prefix which Vercel will proxy to backend
+const API_URL = '/api'
 
 interface SearchResult {
     doc_id: string

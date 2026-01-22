@@ -1,0 +1,44 @@
+{
+    "version": 2,
+    "buildCommand": "cd frontend && npm install && npm run build",
+    "outputDirectory": "frontend/dist",
+    "framework": null,
+    "functions": {
+        "api/*.py": {
+            "runtime": "python3.9"
+        }
+    },
+    "rewrites": [
+        {
+            "source": "/api/login",
+            "destination": "/api/index"
+        },
+        {
+            "source": "/api/search",
+            "destination": "/api/index"
+        },
+        {
+            "source": "/api/:path*",
+            "destination": "/api/index"
+        }
+    ],
+    "headers": [
+        {
+            "source": "/api/(.*)",
+            "headers": [
+                {
+                    "key": "Access-Control-Allow-Origin",
+                    "value": "*"
+                },
+                {
+                    "key": "Access-Control-Allow-Methods",
+                    "value": "GET, POST, OPTIONS"
+                },
+                {
+                    "key": "Access-Control-Allow-Headers",
+                    "value": "Content-Type, Authorization"
+                }
+            ]
+        }
+    ]
+}

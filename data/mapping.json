@@ -1,37 +1,4025 @@
-[
+{
+  "metadata": {
+    "description": "Mapping of Indian Penal Code (IPC) 1860 sections to Bharatiya Nyaya Sanhita (BNS) 2023 sections",
+    "source_documents": [
+      "BNS_IPC_Comparative.pdf",
+      "COMPARISON_SUMMARY_BNS_to_IPC_.pdf"
+    ],
+    "effective_date": "2024-07-01",
+    "notes": "Sections marked as 'Deleted' have no direct equivalent in BNS. New sections in BNS have no IPC equivalent."
+  },
+  "mappings": [
     {
-        "old_code": "IPC",
-        "old_section": "299",
-        "new_code": "BNS",
-        "new_section": "100",
-        "title": "Culpable homicide"
+      "old_code": "IPC",
+      "old_section": "1",
+      "new_code": "BNS",
+      "new_section": "1(1)",
+      "title": "Short title, commencement and application"
     },
     {
-        "old_code": "IPC",
-        "old_section": "300",
-        "new_code": "BNS",
-        "new_section": "101",
-        "title": "Murder"
+      "old_code": "IPC",
+      "old_section": "2",
+      "new_code": "BNS",
+      "new_section": "1(3)",
+      "title": "Punishment of offences committed within India"
     },
     {
-        "old_code": "IPC",
-        "old_section": "302",
-        "new_code": "BNS",
-        "new_section": "103",
-        "title": "Punishment for murder"
+      "old_code": "IPC",
+      "old_section": "3",
+      "new_code": "BNS",
+      "new_section": "1(4)",
+      "title": "Punishment of offences committed beyond, but which by law may be tried within, India"
     },
     {
-        "old_code": "IPC",
-        "old_section": "304A",
-        "new_code": "BNS",
-        "new_section": "106",
-        "title": "Causing death by negligence"
+      "old_code": "IPC",
+      "old_section": "4",
+      "new_code": "BNS",
+      "new_section": "1(5)",
+      "title": "Extension of Code to extra-territorial offences"
     },
     {
-        "old_code": "CrPC",
-        "old_section": "154",
-        "new_code": "BNSS",
-        "new_section": "173",
-        "title": "Registration of FIR"
+      "old_code": "IPC",
+      "old_section": "5",
+      "new_code": "BNS",
+      "new_section": "1(6)",
+      "title": "Certain laws not to be affected by this Act"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "6",
+      "new_code": "BNS",
+      "new_section": "3(1)",
+      "title": "Definitions in the Code to be understood subject to exceptions"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "7",
+      "new_code": "BNS",
+      "new_section": "3(2)",
+      "title": "Sense of expression once explained"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "8",
+      "new_code": "BNS",
+      "new_section": "2(10)",
+      "title": "Gender"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "9",
+      "new_code": "BNS",
+      "new_section": "2(22)",
+      "title": "Number"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "10",
+      "new_code": "BNS",
+      "new_section": "2(19), 2(35)",
+      "title": "Man and Woman"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "11",
+      "new_code": "BNS",
+      "new_section": "2(26)",
+      "title": "Person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "12",
+      "new_code": "BNS",
+      "new_section": "2(27)",
+      "title": "Public"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "14",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Servant of Government - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "17",
+      "new_code": "BNS",
+      "new_section": "2(12)",
+      "title": "Government"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "18",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "India - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "19",
+      "new_code": "BNS",
+      "new_section": "2(16)",
+      "title": "Judge"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "20",
+      "new_code": "BNS",
+      "new_section": "2(5)",
+      "title": "Court of Justice"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "21",
+      "new_code": "BNS",
+      "new_section": "2(28)",
+      "title": "Public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "22",
+      "new_code": "BNS",
+      "new_section": "2(21)",
+      "title": "Movable property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "23",
+      "new_code": "BNS",
+      "new_section": "2(36), 2(37), 2(38)",
+      "title": "Wrongful gain, Wrongful loss"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "24",
+      "new_code": "BNS",
+      "new_section": "2(7)",
+      "title": "Dishonestly"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "25",
+      "new_code": "BNS",
+      "new_section": "2(9)",
+      "title": "Fraudulently"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "26",
+      "new_code": "BNS",
+      "new_section": "2(29)",
+      "title": "Reason to believe"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "27",
+      "new_code": "BNS",
+      "new_section": "3(3)",
+      "title": "Property in possession of wife, clerk or servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "28",
+      "new_code": "BNS",
+      "new_section": "2(4)",
+      "title": "Counterfeit"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "29",
+      "new_code": "BNS",
+      "new_section": "2(8)",
+      "title": "Document"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "29A",
+      "new_code": "BNS",
+      "new_section": "2(8)",
+      "title": "Electronic record - Merged into Document definition"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "30",
+      "new_code": "BNS",
+      "new_section": "2(31)",
+      "title": "Valuable security"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "31",
+      "new_code": "BNS",
+      "new_section": "2(34)",
+      "title": "A will"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "32",
+      "new_code": "BNS",
+      "new_section": "3(4)",
+      "title": "Words referring to acts include illegal omissions"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "33",
+      "new_code": "BNS",
+      "new_section": "2(1), 2(25)",
+      "title": "Act and Omission"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "34",
+      "new_code": "BNS",
+      "new_section": "3(5)",
+      "title": "Acts done by several persons in furtherance of common intention"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "35",
+      "new_code": "BNS",
+      "new_section": "3(6)",
+      "title": "When such an act is criminal by reason of its being done with a criminal knowledge or intention"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "36",
+      "new_code": "BNS",
+      "new_section": "3(7)",
+      "title": "Effect caused partly by act and partly by omission"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "37",
+      "new_code": "BNS",
+      "new_section": "3(8)",
+      "title": "Co-operation by doing one of several acts constituting an offence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "38",
+      "new_code": "BNS",
+      "new_section": "3(9)",
+      "title": "Persons concerned in criminal act may be guilty of different offences"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "39",
+      "new_code": "BNS",
+      "new_section": "2(33)",
+      "title": "Voluntarily"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "40",
+      "new_code": "BNS",
+      "new_section": "2(24)",
+      "title": "Offence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "41",
+      "new_code": "BNS",
+      "new_section": "2(30)",
+      "title": "Special law"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "42",
+      "new_code": "BNS",
+      "new_section": "2(18)",
+      "title": "Local law"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "43",
+      "new_code": "BNS",
+      "new_section": "2(15)",
+      "title": "Illegal and legally bound to do"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "44",
+      "new_code": "BNS",
+      "new_section": "2(14)",
+      "title": "Injury"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "45",
+      "new_code": "BNS",
+      "new_section": "2(17)",
+      "title": "Life"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "46",
+      "new_code": "BNS",
+      "new_section": "2(6)",
+      "title": "Death"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "47",
+      "new_code": "BNS",
+      "new_section": "2(2)",
+      "title": "Animal"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "48",
+      "new_code": "BNS",
+      "new_section": "2(32)",
+      "title": "Vessel"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "49",
+      "new_code": "BNS",
+      "new_section": "2(20)",
+      "title": "Year and Month"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "50",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Section - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "51",
+      "new_code": "BNS",
+      "new_section": "2(23)",
+      "title": "Oath"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "52",
+      "new_code": "BNS",
+      "new_section": "2(11)",
+      "title": "Good faith"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "52A",
+      "new_code": "BNS",
+      "new_section": "2(13)",
+      "title": "Harbour"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "53",
+      "new_code": "BNS",
+      "new_section": "4",
+      "title": "Punishments"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "53A",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Construction of reference to transportation - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "54",
+      "new_code": "BNS",
+      "new_section": "5(a)",
+      "title": "Commutation of sentence of death"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "55",
+      "new_code": "BNS",
+      "new_section": "5(b)",
+      "title": "Commutation of sentence of imprisonment for life"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "55A",
+      "new_code": "BNS",
+      "new_section": "5 Explanation",
+      "title": "Definition of life imprisonment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "57",
+      "new_code": "BNS",
+      "new_section": "6",
+      "title": "Fractions of terms of punishment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "60",
+      "new_code": "BNS",
+      "new_section": "7",
+      "title": "Sentence may be wholly or partly rigorous or simple"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "63",
+      "new_code": "BNS",
+      "new_section": "8(1)",
+      "title": "Amount of fine"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "64",
+      "new_code": "BNS",
+      "new_section": "8(2)",
+      "title": "Sentence of imprisonment for non-payment of fine"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "65",
+      "new_code": "BNS",
+      "new_section": "8(3)",
+      "title": "Limit to imprisonment for non-payment of fine"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "66",
+      "new_code": "BNS",
+      "new_section": "8(4)",
+      "title": "Description of imprisonment for non-payment of fine"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "67",
+      "new_code": "BNS",
+      "new_section": "8(5)",
+      "title": "Imprisonment for non-payment of fine when offence punishable with fine only"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "68",
+      "new_code": "BNS",
+      "new_section": "8(6)(a)",
+      "title": "Imprisonment to terminate on payment of fine"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "69",
+      "new_code": "BNS",
+      "new_section": "8(6)(b)",
+      "title": "Termination of imprisonment on payment of proportional part of fine"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "70",
+      "new_code": "BNS",
+      "new_section": "8(7)",
+      "title": "Fine leviable within six years or during imprisonment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "71",
+      "new_code": "BNS",
+      "new_section": "9",
+      "title": "Limit of punishment of offence made up of several offences"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "72",
+      "new_code": "BNS",
+      "new_section": "10",
+      "title": "Punishment of person guilty of one of several offences"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "73",
+      "new_code": "BNS",
+      "new_section": "11",
+      "title": "Solitary confinement"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "74",
+      "new_code": "BNS",
+      "new_section": "12",
+      "title": "Limit of solitary confinement"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "75",
+      "new_code": "BNS",
+      "new_section": "13",
+      "title": "Enhanced punishment for certain offences after previous conviction"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "76",
+      "new_code": "BNS",
+      "new_section": "14",
+      "title": "Act done by a person bound by law or by mistake of fact"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "77",
+      "new_code": "BNS",
+      "new_section": "15",
+      "title": "Act of Judge when acting judicially"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "78",
+      "new_code": "BNS",
+      "new_section": "16",
+      "title": "Act done pursuant to judgment or order of Court"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "79",
+      "new_code": "BNS",
+      "new_section": "17",
+      "title": "Act done by a person justified by law"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "80",
+      "new_code": "BNS",
+      "new_section": "18",
+      "title": "Accident in doing a lawful act"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "81",
+      "new_code": "BNS",
+      "new_section": "19",
+      "title": "Act likely to cause harm but done without criminal intent"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "82",
+      "new_code": "BNS",
+      "new_section": "20",
+      "title": "Act of a child under seven years of age"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "83",
+      "new_code": "BNS",
+      "new_section": "21",
+      "title": "Act of a child above seven and under twelve of immature understanding"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "84",
+      "new_code": "BNS",
+      "new_section": "22",
+      "title": "Act of a person of unsound mind"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "85",
+      "new_code": "BNS",
+      "new_section": "23",
+      "title": "Act of a person incapable of judgment by reason of intoxication"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "86",
+      "new_code": "BNS",
+      "new_section": "24",
+      "title": "Offence requiring particular intent committed by one who is intoxicated"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "87",
+      "new_code": "BNS",
+      "new_section": "25",
+      "title": "Act not intended to cause death done by consent"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "88",
+      "new_code": "BNS",
+      "new_section": "26",
+      "title": "Act not intended to cause death done in good faith for person's benefit"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "89",
+      "new_code": "BNS",
+      "new_section": "27",
+      "title": "Act done in good faith for benefit of child or person of unsound mind"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "90",
+      "new_code": "BNS",
+      "new_section": "28",
+      "title": "Consent known to be given under fear or misconception"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "91",
+      "new_code": "BNS",
+      "new_section": "29",
+      "title": "Exclusion of acts which are offences independently of harm caused"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "92",
+      "new_code": "BNS",
+      "new_section": "30",
+      "title": "Act done in good faith for benefit of a person without consent"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "93",
+      "new_code": "BNS",
+      "new_section": "31",
+      "title": "Communication made in good faith"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "94",
+      "new_code": "BNS",
+      "new_section": "32",
+      "title": "Act to which a person is compelled by threats"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "95",
+      "new_code": "BNS",
+      "new_section": "33",
+      "title": "Act causing slight harm"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "96",
+      "new_code": "BNS",
+      "new_section": "34",
+      "title": "Things done in private defence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "97",
+      "new_code": "BNS",
+      "new_section": "35",
+      "title": "Right of private defence of body and of property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "98",
+      "new_code": "BNS",
+      "new_section": "36",
+      "title": "Right of private defence against act of a person of unsound mind"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "99",
+      "new_code": "BNS",
+      "new_section": "37",
+      "title": "Acts against which there is no right of private defence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "100",
+      "new_code": "BNS",
+      "new_section": "38",
+      "title": "When the right of private defence of body extends to causing death"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "101",
+      "new_code": "BNS",
+      "new_section": "39",
+      "title": "When such right extends to causing any harm other than death"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "102",
+      "new_code": "BNS",
+      "new_section": "40",
+      "title": "Commencement and continuance of right of private defence of body"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "103",
+      "new_code": "BNS",
+      "new_section": "41",
+      "title": "When right of private defence of property extends to causing death"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "104",
+      "new_code": "BNS",
+      "new_section": "42",
+      "title": "When such right extends to causing any harm other than death"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "105",
+      "new_code": "BNS",
+      "new_section": "43",
+      "title": "Commencement and continuance of right of private defence of property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "106",
+      "new_code": "BNS",
+      "new_section": "44",
+      "title": "Right of private defence against deadly assault when there is risk of harm to innocent person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "107",
+      "new_code": "BNS",
+      "new_section": "45",
+      "title": "Abetment of a thing"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "108",
+      "new_code": "BNS",
+      "new_section": "46",
+      "title": "Abettor"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "108A",
+      "new_code": "BNS",
+      "new_section": "47",
+      "title": "Abetment in India of offences outside India"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "109",
+      "new_code": "BNS",
+      "new_section": "49",
+      "title": "Punishment of abetment if act abetted is committed"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "110",
+      "new_code": "BNS",
+      "new_section": "50",
+      "title": "Punishment of abetment if person abetted does act with different intention"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "111",
+      "new_code": "BNS",
+      "new_section": "51",
+      "title": "Liability of abettor when one act abetted and different act done"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "112",
+      "new_code": "BNS",
+      "new_section": "52",
+      "title": "Abettor when liable to cumulative punishment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "113",
+      "new_code": "BNS",
+      "new_section": "53",
+      "title": "Liability of abettor for an effect caused different from that intended"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "114",
+      "new_code": "BNS",
+      "new_section": "54",
+      "title": "Abettor present when offence is committed"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "115",
+      "new_code": "BNS",
+      "new_section": "55",
+      "title": "Abetment of offence punishable with death or imprisonment for life"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "116",
+      "new_code": "BNS",
+      "new_section": "56",
+      "title": "Abetment of offence punishable with imprisonment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "117",
+      "new_code": "BNS",
+      "new_section": "57",
+      "title": "Abetting commission of offence by the public or by more than ten persons"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "118",
+      "new_code": "BNS",
+      "new_section": "58",
+      "title": "Concealing design to commit offence punishable with death or imprisonment for life"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "119",
+      "new_code": "BNS",
+      "new_section": "59",
+      "title": "Public servant concealing design to commit offence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "120",
+      "new_code": "BNS",
+      "new_section": "60",
+      "title": "Concealing design to commit offence punishable with imprisonment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "120A",
+      "new_code": "BNS",
+      "new_section": "61(1)",
+      "title": "Definition of criminal conspiracy"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "120B",
+      "new_code": "BNS",
+      "new_section": "61(2)",
+      "title": "Punishment of criminal conspiracy"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "121",
+      "new_code": "BNS",
+      "new_section": "147",
+      "title": "Waging or attempting to wage war against Government of India"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "121A",
+      "new_code": "BNS",
+      "new_section": "148",
+      "title": "Conspiracy to commit offences punishable by section 121"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "122",
+      "new_code": "BNS",
+      "new_section": "149",
+      "title": "Collecting arms with intention of waging war"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "123",
+      "new_code": "BNS",
+      "new_section": "150",
+      "title": "Concealing with intent to facilitate design to wage war"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "124",
+      "new_code": "BNS",
+      "new_section": "151",
+      "title": "Assaulting President, Governor, etc."
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "124A",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Sedition - DELETED (Replaced by BNS 152)"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "125",
+      "new_code": "BNS",
+      "new_section": "153",
+      "title": "Waging war against Government of any foreign State at peace with Government of India"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "126",
+      "new_code": "BNS",
+      "new_section": "154",
+      "title": "Committing depredation on territories of foreign State"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "127",
+      "new_code": "BNS",
+      "new_section": "155",
+      "title": "Receiving property taken by war or depredation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "128",
+      "new_code": "BNS",
+      "new_section": "156",
+      "title": "Public servant voluntarily allowing prisoner of State or war to escape"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "129",
+      "new_code": "BNS",
+      "new_section": "157",
+      "title": "Public servant negligently suffering such prisoner to escape"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "130",
+      "new_code": "BNS",
+      "new_section": "158",
+      "title": "Aiding escape of, rescuing or harbouring such prisoner"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "131",
+      "new_code": "BNS",
+      "new_section": "159",
+      "title": "Abetting mutiny, or attempting to seduce a soldier"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "132",
+      "new_code": "BNS",
+      "new_section": "160",
+      "title": "Abetment of mutiny if mutiny is committed"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "133",
+      "new_code": "BNS",
+      "new_section": "161",
+      "title": "Abetment of assault by soldier on his superior officer"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "134",
+      "new_code": "BNS",
+      "new_section": "162",
+      "title": "Abetment of such assault if assault committed"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "135",
+      "new_code": "BNS",
+      "new_section": "163",
+      "title": "Abetment of desertion of soldier"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "136",
+      "new_code": "BNS",
+      "new_section": "164",
+      "title": "Harbouring deserter"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "137",
+      "new_code": "BNS",
+      "new_section": "165",
+      "title": "Deserter concealed on board merchant vessel"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "138",
+      "new_code": "BNS",
+      "new_section": "166",
+      "title": "Abetment of act of insubordination"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "139",
+      "new_code": "BNS",
+      "new_section": "167",
+      "title": "Persons subject to certain Acts"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "140",
+      "new_code": "BNS",
+      "new_section": "168",
+      "title": "Wearing garb or carrying token used by soldier"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "141",
+      "new_code": "BNS",
+      "new_section": "189(1)",
+      "title": "Unlawful assembly"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "142",
+      "new_code": "BNS",
+      "new_section": "189(2)",
+      "title": "Being member of unlawful assembly"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "143",
+      "new_code": "BNS",
+      "new_section": "189(2)",
+      "title": "Punishment for being member of unlawful assembly"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "144",
+      "new_code": "BNS",
+      "new_section": "189(4)",
+      "title": "Joining unlawful assembly armed with deadly weapon"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "145",
+      "new_code": "BNS",
+      "new_section": "189(3)",
+      "title": "Joining or continuing in unlawful assembly knowing it has been commanded to disperse"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "146",
+      "new_code": "BNS",
+      "new_section": "191(1)",
+      "title": "Rioting"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "147",
+      "new_code": "BNS",
+      "new_section": "191(2)",
+      "title": "Punishment for rioting"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "148",
+      "new_code": "BNS",
+      "new_section": "191(3)",
+      "title": "Rioting armed with deadly weapon"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "149",
+      "new_code": "BNS",
+      "new_section": "190",
+      "title": "Every member of unlawful assembly guilty of offence committed in prosecution of common object"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "150",
+      "new_code": "BNS",
+      "new_section": "189(6)",
+      "title": "Hiring or conniving at hiring of persons to join unlawful assembly"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "151",
+      "new_code": "BNS",
+      "new_section": "189(5)",
+      "title": "Knowingly joining or continuing in assembly after commanded to disperse"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "152",
+      "new_code": "BNS",
+      "new_section": "195",
+      "title": "Assaulting or obstructing public servant when suppressing riot"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "153",
+      "new_code": "BNS",
+      "new_section": "192",
+      "title": "Wantonly giving provocation with intent to cause riot"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "153A",
+      "new_code": "BNS",
+      "new_section": "196",
+      "title": "Promoting enmity between different groups"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "153AA",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Punishment for knowingly carrying arms in procession - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "153B",
+      "new_code": "BNS",
+      "new_section": "197",
+      "title": "Imputations, assertions prejudicial to national integration"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "154",
+      "new_code": "BNS",
+      "new_section": "193(1)",
+      "title": "Owner or occupier of land on which unlawful assembly is held"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "155",
+      "new_code": "BNS",
+      "new_section": "193(2)",
+      "title": "Liability of person for whose benefit riot is committed"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "156",
+      "new_code": "BNS",
+      "new_section": "193(3)",
+      "title": "Liability of agent of owner or occupier for whose benefit riot is committed"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "157",
+      "new_code": "BNS",
+      "new_section": "189(7)",
+      "title": "Harbouring persons hired for an unlawful assembly"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "158",
+      "new_code": "BNS",
+      "new_section": "189(8), 189(9)",
+      "title": "Being hired to take part in an unlawful assembly or riot or to go armed"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "159",
+      "new_code": "BNS",
+      "new_section": "194(1)",
+      "title": "Affray"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "160",
+      "new_code": "BNS",
+      "new_section": "194(2)",
+      "title": "Punishment for committing affray"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "166",
+      "new_code": "BNS",
+      "new_section": "198",
+      "title": "Public servant disobeying law with intent to cause injury"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "166A",
+      "new_code": "BNS",
+      "new_section": "199",
+      "title": "Public servant disobeying direction under law"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "166B",
+      "new_code": "BNS",
+      "new_section": "200",
+      "title": "Punishment for non-treatment of victim"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "167",
+      "new_code": "BNS",
+      "new_section": "201",
+      "title": "Public servant framing an incorrect document"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "168",
+      "new_code": "BNS",
+      "new_section": "202",
+      "title": "Public servant unlawfully engaging in trade"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "169",
+      "new_code": "BNS",
+      "new_section": "203",
+      "title": "Public servant unlawfully buying or bidding for property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "170",
+      "new_code": "BNS",
+      "new_section": "204",
+      "title": "Personating a public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "171",
+      "new_code": "BNS",
+      "new_section": "205",
+      "title": "Wearing garb or carrying token used by public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "171A",
+      "new_code": "BNS",
+      "new_section": "169",
+      "title": "Candidate, electoral right defined"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "171B",
+      "new_code": "BNS",
+      "new_section": "170",
+      "title": "Bribery"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "171C",
+      "new_code": "BNS",
+      "new_section": "171",
+      "title": "Undue influence at elections"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "171D",
+      "new_code": "BNS",
+      "new_section": "172",
+      "title": "Personation at elections"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "171E",
+      "new_code": "BNS",
+      "new_section": "173",
+      "title": "Punishment for bribery"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "171F",
+      "new_code": "BNS",
+      "new_section": "174",
+      "title": "Punishment for undue influence or personation at an election"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "171G",
+      "new_code": "BNS",
+      "new_section": "175",
+      "title": "False statement in connection with an election"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "171H",
+      "new_code": "BNS",
+      "new_section": "176",
+      "title": "Illegal payments in connection with an election"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "171I",
+      "new_code": "BNS",
+      "new_section": "177",
+      "title": "Failure to keep election accounts"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "172",
+      "new_code": "BNS",
+      "new_section": "206",
+      "title": "Absconding to avoid service of summons"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "173",
+      "new_code": "BNS",
+      "new_section": "207",
+      "title": "Preventing service of summons"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "174",
+      "new_code": "BNS",
+      "new_section": "208",
+      "title": "Non-attendance in obedience to an order from public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "174A",
+      "new_code": "BNS",
+      "new_section": "209",
+      "title": "Non-appearance in response to a proclamation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "175",
+      "new_code": "BNS",
+      "new_section": "210",
+      "title": "Omission to produce document to public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "176",
+      "new_code": "BNS",
+      "new_section": "211",
+      "title": "Omission to give notice or information to public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "177",
+      "new_code": "BNS",
+      "new_section": "212",
+      "title": "Furnishing false information"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "178",
+      "new_code": "BNS",
+      "new_section": "213",
+      "title": "Refusing oath when duly required by public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "179",
+      "new_code": "BNS",
+      "new_section": "214",
+      "title": "Refusing to answer public servant authorised to question"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "180",
+      "new_code": "BNS",
+      "new_section": "215",
+      "title": "Refusing to sign statement"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "181",
+      "new_code": "BNS",
+      "new_section": "216",
+      "title": "False statement on oath"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "182",
+      "new_code": "BNS",
+      "new_section": "217",
+      "title": "False information with intent to cause public servant to use lawful power to injury"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "183",
+      "new_code": "BNS",
+      "new_section": "218",
+      "title": "Resistance to the taking of property by lawful authority"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "184",
+      "new_code": "BNS",
+      "new_section": "219",
+      "title": "Obstructing sale of property offered for sale by authority of public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "185",
+      "new_code": "BNS",
+      "new_section": "220",
+      "title": "Illegal purchase or bid for property offered for sale"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "186",
+      "new_code": "BNS",
+      "new_section": "221",
+      "title": "Obstructing public servant in discharge of public functions"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "187",
+      "new_code": "BNS",
+      "new_section": "222",
+      "title": "Omission to assist public servant when bound by law"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "188",
+      "new_code": "BNS",
+      "new_section": "223",
+      "title": "Disobedience to order duly promulgated by public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "189",
+      "new_code": "BNS",
+      "new_section": "224",
+      "title": "Threat of injury to public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "190",
+      "new_code": "BNS",
+      "new_section": "225",
+      "title": "Threat of injury to induce person to refrain from applying for protection"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "191",
+      "new_code": "BNS",
+      "new_section": "227",
+      "title": "Giving false evidence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "192",
+      "new_code": "BNS",
+      "new_section": "228",
+      "title": "Fabricating false evidence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "193",
+      "new_code": "BNS",
+      "new_section": "229",
+      "title": "Punishment for false evidence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "194",
+      "new_code": "BNS",
+      "new_section": "230",
+      "title": "Giving or fabricating false evidence with intent to procure conviction of capital offence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "195",
+      "new_code": "BNS",
+      "new_section": "231",
+      "title": "Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "195A",
+      "new_code": "BNS",
+      "new_section": "232",
+      "title": "Threatening any person to give false evidence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "196",
+      "new_code": "BNS",
+      "new_section": "233",
+      "title": "Using evidence known to be false"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "197",
+      "new_code": "BNS",
+      "new_section": "234",
+      "title": "Issuing or signing false certificate"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "198",
+      "new_code": "BNS",
+      "new_section": "235",
+      "title": "Using as true a certificate known to be false"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "199",
+      "new_code": "BNS",
+      "new_section": "236",
+      "title": "False statement made in declaration which is by law receivable as evidence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "200",
+      "new_code": "BNS",
+      "new_section": "237",
+      "title": "Using as true such declaration knowing it to be false"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "201",
+      "new_code": "BNS",
+      "new_section": "238",
+      "title": "Causing disappearance of evidence of offence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "202",
+      "new_code": "BNS",
+      "new_section": "239",
+      "title": "Intentional omission to give information of offence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "203",
+      "new_code": "BNS",
+      "new_section": "240",
+      "title": "Giving false information respecting an offence committed"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "204",
+      "new_code": "BNS",
+      "new_section": "241",
+      "title": "Destruction of document to prevent its production as evidence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "205",
+      "new_code": "BNS",
+      "new_section": "242",
+      "title": "False personation for purpose of act or proceeding in suit"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "206",
+      "new_code": "BNS",
+      "new_section": "243",
+      "title": "Fraudulent removal or concealment of property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "207",
+      "new_code": "BNS",
+      "new_section": "244",
+      "title": "Fraudulent claim to property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "208",
+      "new_code": "BNS",
+      "new_section": "245",
+      "title": "Fraudulently suffering decree for sum not due"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "209",
+      "new_code": "BNS",
+      "new_section": "246",
+      "title": "Dishonestly making false claim in Court"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "210",
+      "new_code": "BNS",
+      "new_section": "247",
+      "title": "Fraudulently obtaining decree for sum not due"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "211",
+      "new_code": "BNS",
+      "new_section": "248",
+      "title": "False charge of offence made with intent to injure"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "212",
+      "new_code": "BNS",
+      "new_section": "249",
+      "title": "Harbouring offender"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "213",
+      "new_code": "BNS",
+      "new_section": "250",
+      "title": "Taking gift to screen an offender from punishment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "214",
+      "new_code": "BNS",
+      "new_section": "251",
+      "title": "Offering gift in consideration of screening offender"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "215",
+      "new_code": "BNS",
+      "new_section": "252",
+      "title": "Taking gift to help to recover stolen property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "216",
+      "new_code": "BNS",
+      "new_section": "253",
+      "title": "Harbouring offender who has escaped from custody"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "216A",
+      "new_code": "BNS",
+      "new_section": "254",
+      "title": "Penalty for harbouring robbers or dacoits"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "217",
+      "new_code": "BNS",
+      "new_section": "255",
+      "title": "Public servant disobeying direction of law with intent to save person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "218",
+      "new_code": "BNS",
+      "new_section": "256",
+      "title": "Public servant framing incorrect record or writing"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "219",
+      "new_code": "BNS",
+      "new_section": "257",
+      "title": "Public servant in judicial proceeding corruptly making report"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "220",
+      "new_code": "BNS",
+      "new_section": "258",
+      "title": "Commitment for trial by person having authority who knows he is acting contrary to law"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "221",
+      "new_code": "BNS",
+      "new_section": "259",
+      "title": "Intentional omission to apprehend on part of public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "222",
+      "new_code": "BNS",
+      "new_section": "260",
+      "title": "Intentional omission to apprehend person under sentence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "223",
+      "new_code": "BNS",
+      "new_section": "261",
+      "title": "Escape from confinement negligently suffered by public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "224",
+      "new_code": "BNS",
+      "new_section": "262",
+      "title": "Resistance or obstruction by a person to his lawful apprehension"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "225",
+      "new_code": "BNS",
+      "new_section": "263",
+      "title": "Resistance or obstruction to lawful apprehension of another person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "225A",
+      "new_code": "BNS",
+      "new_section": "264",
+      "title": "Omission to apprehend in cases not otherwise provided for"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "225B",
+      "new_code": "BNS",
+      "new_section": "265",
+      "title": "Resistance or obstruction to lawful apprehension or escape"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "227",
+      "new_code": "BNS",
+      "new_section": "266",
+      "title": "Violation of condition of remission of punishment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "228",
+      "new_code": "BNS",
+      "new_section": "267",
+      "title": "Intentional insult or interruption to public servant sitting in judicial proceeding"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "228A",
+      "new_code": "BNS",
+      "new_section": "72, 73",
+      "title": "Disclosure of identity of victim of certain offences"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "229",
+      "new_code": "BNS",
+      "new_section": "268",
+      "title": "Personation of a juror or assessor"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "229A",
+      "new_code": "BNS",
+      "new_section": "269",
+      "title": "Failure by person released on bail to appear in court"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "231",
+      "new_code": "BNS",
+      "new_section": "178",
+      "title": "Counterfeiting coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "232",
+      "new_code": "BNS",
+      "new_section": "178",
+      "title": "Counterfeiting Indian coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "233",
+      "new_code": "BNS",
+      "new_section": "181",
+      "title": "Making or selling instrument for counterfeiting coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "234",
+      "new_code": "BNS",
+      "new_section": "181",
+      "title": "Making or selling instrument for counterfeiting Indian coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "235",
+      "new_code": "BNS",
+      "new_section": "181",
+      "title": "Possession of instrument for counterfeiting coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "236",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Abetting in India the counterfeiting out of India of coin - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "237",
+      "new_code": "BNS",
+      "new_section": "179",
+      "title": "Import or export of counterfeit coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "238",
+      "new_code": "BNS",
+      "new_section": "179",
+      "title": "Import or export of counterfeits of the Indian coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "239",
+      "new_code": "BNS",
+      "new_section": "179",
+      "title": "Delivery of coin possessed with knowledge that it is counterfeit"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "240",
+      "new_code": "BNS",
+      "new_section": "179",
+      "title": "Delivery of Indian coin possessed with knowledge that it is counterfeit"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "241",
+      "new_code": "BNS",
+      "new_section": "179",
+      "title": "Delivery of coin as genuine when deliverer did not know it to be counterfeit"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "242",
+      "new_code": "BNS",
+      "new_section": "180",
+      "title": "Possession of counterfeit coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "243",
+      "new_code": "BNS",
+      "new_section": "180",
+      "title": "Possession of Indian coin known to be counterfeit"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "244",
+      "new_code": "BNS",
+      "new_section": "187",
+      "title": "Person employed in mint causing coin to be of different weight"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "245",
+      "new_code": "BNS",
+      "new_section": "188",
+      "title": "Unlawfully taking coining instrument from mint"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "246",
+      "new_code": "BNS",
+      "new_section": "178",
+      "title": "Fraudulently diminishing weight or altering composition of coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "247",
+      "new_code": "BNS",
+      "new_section": "178",
+      "title": "Fraudulently diminishing weight or altering composition of Indian coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "248",
+      "new_code": "BNS",
+      "new_section": "178",
+      "title": "Altering appearance of coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "249",
+      "new_code": "BNS",
+      "new_section": "178",
+      "title": "Altering appearance of Indian coin"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "250",
+      "new_code": "BNS",
+      "new_section": "179",
+      "title": "Delivery of coin possessed with knowledge that it is altered"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "251",
+      "new_code": "BNS",
+      "new_section": "179",
+      "title": "Delivery of Indian coin possessed with knowledge that it is altered"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "252",
+      "new_code": "BNS",
+      "new_section": "180",
+      "title": "Possession of coin by person who knew it to be altered"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "253",
+      "new_code": "BNS",
+      "new_section": "180",
+      "title": "Possession of Indian coin by person who knew it to be altered"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "254",
+      "new_code": "BNS",
+      "new_section": "179",
+      "title": "Delivery of coin as genuine when deliverer did not know it to be altered"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "255",
+      "new_code": "BNS",
+      "new_section": "178",
+      "title": "Counterfeiting Government stamp"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "256",
+      "new_code": "BNS",
+      "new_section": "181",
+      "title": "Having possession of instrument for counterfeiting Government stamp"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "257",
+      "new_code": "BNS",
+      "new_section": "181",
+      "title": "Making or selling instrument for counterfeiting Government stamp"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "258",
+      "new_code": "BNS",
+      "new_section": "179",
+      "title": "Sale of counterfeit Government stamp"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "259",
+      "new_code": "BNS",
+      "new_section": "180",
+      "title": "Having possession of counterfeit Government stamp"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "260",
+      "new_code": "BNS",
+      "new_section": "179",
+      "title": "Using as genuine a Government stamp known to be counterfeit"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "261",
+      "new_code": "BNS",
+      "new_section": "183",
+      "title": "Effacing writing from substance bearing Government stamp"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "262",
+      "new_code": "BNS",
+      "new_section": "184",
+      "title": "Using Government stamp known to have been before used"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "263",
+      "new_code": "BNS",
+      "new_section": "185",
+      "title": "Erasure of mark denoting that stamp has been used"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "263A",
+      "new_code": "BNS",
+      "new_section": "186",
+      "title": "Prohibition of fictitious stamps"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "264",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Fraudulent use of false instrument for weighing - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "265",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Fraudulent use of false weight or measure - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "266",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Being in possession of false weight or measure - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "267",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Making or selling false weight or measure - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "268",
+      "new_code": "BNS",
+      "new_section": "270",
+      "title": "Public nuisance"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "269",
+      "new_code": "BNS",
+      "new_section": "271",
+      "title": "Negligent act likely to spread infection of disease dangerous to life"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "270",
+      "new_code": "BNS",
+      "new_section": "272",
+      "title": "Malignant act likely to spread infection of disease"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "271",
+      "new_code": "BNS",
+      "new_section": "273",
+      "title": "Disobedience to quarantine rule"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "272",
+      "new_code": "BNS",
+      "new_section": "274",
+      "title": "Adulteration of food or drink intended for sale"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "273",
+      "new_code": "BNS",
+      "new_section": "275",
+      "title": "Sale of noxious food or drink"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "274",
+      "new_code": "BNS",
+      "new_section": "276",
+      "title": "Adulteration of drugs"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "275",
+      "new_code": "BNS",
+      "new_section": "277",
+      "title": "Sale of adulterated drugs"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "276",
+      "new_code": "BNS",
+      "new_section": "278",
+      "title": "Sale of drug as a different drug or preparation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "277",
+      "new_code": "BNS",
+      "new_section": "279",
+      "title": "Fouling water of public spring or reservoir"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "278",
+      "new_code": "BNS",
+      "new_section": "280",
+      "title": "Making atmosphere noxious to health"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "279",
+      "new_code": "BNS",
+      "new_section": "281",
+      "title": "Rash driving or riding on a public way"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "280",
+      "new_code": "BNS",
+      "new_section": "282",
+      "title": "Rash navigation of vessel"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "281",
+      "new_code": "BNS",
+      "new_section": "283",
+      "title": "Exhibition of false light mark or buoy"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "282",
+      "new_code": "BNS",
+      "new_section": "284",
+      "title": "Conveying person by water for hire in unsafe or overloaded vessel"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "283",
+      "new_code": "BNS",
+      "new_section": "285",
+      "title": "Danger or obstruction in public way or line of navigation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "284",
+      "new_code": "BNS",
+      "new_section": "286",
+      "title": "Negligent conduct with respect to poisonous substance"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "285",
+      "new_code": "BNS",
+      "new_section": "287",
+      "title": "Negligent conduct with respect to fire or combustible matter"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "286",
+      "new_code": "BNS",
+      "new_section": "288",
+      "title": "Negligent conduct with respect to explosive substance"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "287",
+      "new_code": "BNS",
+      "new_section": "289",
+      "title": "Negligent conduct with respect to machinery"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "288",
+      "new_code": "BNS",
+      "new_section": "290",
+      "title": "Negligent conduct with respect to pulling down or repairing buildings"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "289",
+      "new_code": "BNS",
+      "new_section": "291",
+      "title": "Negligent conduct with respect to animal"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "290",
+      "new_code": "BNS",
+      "new_section": "292",
+      "title": "Punishment for public nuisance in cases not otherwise provided for"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "291",
+      "new_code": "BNS",
+      "new_section": "293",
+      "title": "Continuance of nuisance after injunction to discontinue"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "292",
+      "new_code": "BNS",
+      "new_section": "294",
+      "title": "Sale of obscene books"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "293",
+      "new_code": "BNS",
+      "new_section": "295",
+      "title": "Sale of obscene objects to young person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "294",
+      "new_code": "BNS",
+      "new_section": "296",
+      "title": "Obscene acts and songs"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "294A",
+      "new_code": "BNS",
+      "new_section": "297",
+      "title": "Keeping lottery office"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "295",
+      "new_code": "BNS",
+      "new_section": "298",
+      "title": "Injuring or defiling place of worship"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "295A",
+      "new_code": "BNS",
+      "new_section": "299",
+      "title": "Deliberate and malicious acts intended to outrage religious feelings"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "296",
+      "new_code": "BNS",
+      "new_section": "300",
+      "title": "Disturbing religious assembly"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "297",
+      "new_code": "BNS",
+      "new_section": "301",
+      "title": "Trespassing on burial places"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "298",
+      "new_code": "BNS",
+      "new_section": "302",
+      "title": "Uttering words with deliberate intent to wound religious feelings"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "299",
+      "new_code": "BNS",
+      "new_section": "100",
+      "title": "Culpable homicide"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "300",
+      "new_code": "BNS",
+      "new_section": "101",
+      "title": "Murder"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "301",
+      "new_code": "BNS",
+      "new_section": "102",
+      "title": "Culpable homicide by causing death of person other than person whose death was intended"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "302",
+      "new_code": "BNS",
+      "new_section": "103(1)",
+      "title": "Punishment for murder"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "303",
+      "new_code": "BNS",
+      "new_section": "104",
+      "title": "Punishment for murder by life-convict"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "304",
+      "new_code": "BNS",
+      "new_section": "105",
+      "title": "Punishment for culpable homicide not amounting to murder"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "304A",
+      "new_code": "BNS",
+      "new_section": "106(1)",
+      "title": "Causing death by negligence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "304B",
+      "new_code": "BNS",
+      "new_section": "80",
+      "title": "Dowry death"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "305",
+      "new_code": "BNS",
+      "new_section": "107",
+      "title": "Abetment of suicide of child or insane person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "306",
+      "new_code": "BNS",
+      "new_section": "108",
+      "title": "Abetment of suicide"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "307",
+      "new_code": "BNS",
+      "new_section": "109",
+      "title": "Attempt to murder"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "308",
+      "new_code": "BNS",
+      "new_section": "110",
+      "title": "Attempt to commit culpable homicide"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "309",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Attempt to commit suicide - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "310",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Thug - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "311",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Punishment for Thug - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "312",
+      "new_code": "BNS",
+      "new_section": "88",
+      "title": "Causing miscarriage"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "313",
+      "new_code": "BNS",
+      "new_section": "89",
+      "title": "Causing miscarriage without woman's consent"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "314",
+      "new_code": "BNS",
+      "new_section": "90",
+      "title": "Death caused by act done with intent to cause miscarriage"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "315",
+      "new_code": "BNS",
+      "new_section": "91",
+      "title": "Act done with intent to prevent child being born alive"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "316",
+      "new_code": "BNS",
+      "new_section": "92",
+      "title": "Causing death of quick unborn child by act amounting to culpable homicide"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "317",
+      "new_code": "BNS",
+      "new_section": "93",
+      "title": "Exposure and abandonment of child under twelve years"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "318",
+      "new_code": "BNS",
+      "new_section": "94",
+      "title": "Concealment of birth by secret disposal of dead body"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "319",
+      "new_code": "BNS",
+      "new_section": "114",
+      "title": "Hurt"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "320",
+      "new_code": "BNS",
+      "new_section": "116",
+      "title": "Grievous hurt"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "321",
+      "new_code": "BNS",
+      "new_section": "115(1)",
+      "title": "Voluntarily causing hurt"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "322",
+      "new_code": "BNS",
+      "new_section": "117(1)",
+      "title": "Voluntarily causing grievous hurt"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "323",
+      "new_code": "BNS",
+      "new_section": "115(2)",
+      "title": "Punishment for voluntarily causing hurt"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "324",
+      "new_code": "BNS",
+      "new_section": "118(1)",
+      "title": "Voluntarily causing hurt by dangerous weapons or means"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "325",
+      "new_code": "BNS",
+      "new_section": "117(2)",
+      "title": "Punishment for voluntarily causing grievous hurt"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "326",
+      "new_code": "BNS",
+      "new_section": "118(2)",
+      "title": "Voluntarily causing grievous hurt by dangerous weapons or means"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "326A",
+      "new_code": "BNS",
+      "new_section": "124(1)",
+      "title": "Voluntarily causing grievous hurt by use of acid"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "326B",
+      "new_code": "BNS",
+      "new_section": "124(2)",
+      "title": "Voluntarily throwing or attempting to throw acid"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "327",
+      "new_code": "BNS",
+      "new_section": "119(1)",
+      "title": "Voluntarily causing hurt to extort property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "328",
+      "new_code": "BNS",
+      "new_section": "123",
+      "title": "Causing hurt by means of poison with intent to commit an offence"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "329",
+      "new_code": "BNS",
+      "new_section": "119(2)",
+      "title": "Voluntarily causing grievous hurt to extort property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "330",
+      "new_code": "BNS",
+      "new_section": "120(1)",
+      "title": "Voluntarily causing hurt to extort confession"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "331",
+      "new_code": "BNS",
+      "new_section": "120(2)",
+      "title": "Voluntarily causing grievous hurt to extort confession"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "332",
+      "new_code": "BNS",
+      "new_section": "121(1)",
+      "title": "Voluntarily causing hurt to deter public servant from his duty"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "333",
+      "new_code": "BNS",
+      "new_section": "121(2)",
+      "title": "Voluntarily causing grievous hurt to deter public servant from his duty"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "334",
+      "new_code": "BNS",
+      "new_section": "122(1)",
+      "title": "Voluntarily causing hurt on provocation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "335",
+      "new_code": "BNS",
+      "new_section": "122(2)",
+      "title": "Voluntarily causing grievous hurt on provocation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "336",
+      "new_code": "BNS",
+      "new_section": "125",
+      "title": "Act endangering life or personal safety of others"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "337",
+      "new_code": "BNS",
+      "new_section": "125(a)",
+      "title": "Causing hurt by act endangering life or personal safety"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "338",
+      "new_code": "BNS",
+      "new_section": "125(b)",
+      "title": "Causing grievous hurt by act endangering life or personal safety"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "339",
+      "new_code": "BNS",
+      "new_section": "126(1)",
+      "title": "Wrongful restraint"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "340",
+      "new_code": "BNS",
+      "new_section": "127(1)",
+      "title": "Wrongful confinement"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "341",
+      "new_code": "BNS",
+      "new_section": "126(2)",
+      "title": "Punishment for wrongful restraint"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "342",
+      "new_code": "BNS",
+      "new_section": "127(2)",
+      "title": "Punishment for wrongful confinement"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "343",
+      "new_code": "BNS",
+      "new_section": "127(3)",
+      "title": "Wrongful confinement for three or more days"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "344",
+      "new_code": "BNS",
+      "new_section": "127(4)",
+      "title": "Wrongful confinement for ten or more days"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "345",
+      "new_code": "BNS",
+      "new_section": "127(5)",
+      "title": "Wrongful confinement of person for whose liberation writ has been issued"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "346",
+      "new_code": "BNS",
+      "new_section": "127(6)",
+      "title": "Wrongful confinement in secret"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "347",
+      "new_code": "BNS",
+      "new_section": "127(7)",
+      "title": "Wrongful confinement to extort property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "348",
+      "new_code": "BNS",
+      "new_section": "127(8)",
+      "title": "Wrongful confinement to extort confession"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "349",
+      "new_code": "BNS",
+      "new_section": "128",
+      "title": "Force"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "350",
+      "new_code": "BNS",
+      "new_section": "129",
+      "title": "Criminal force"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "351",
+      "new_code": "BNS",
+      "new_section": "130",
+      "title": "Assault"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "352",
+      "new_code": "BNS",
+      "new_section": "131",
+      "title": "Punishment for assault or criminal force otherwise than on grave provocation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "353",
+      "new_code": "BNS",
+      "new_section": "132",
+      "title": "Assault or criminal force to deter public servant from discharge of his duty"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "354",
+      "new_code": "BNS",
+      "new_section": "74",
+      "title": "Assault or criminal force to woman with intent to outrage her modesty"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "354A",
+      "new_code": "BNS",
+      "new_section": "75",
+      "title": "Sexual harassment and punishment for sexual harassment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "354B",
+      "new_code": "BNS",
+      "new_section": "76",
+      "title": "Assault or use of criminal force to woman with intent to disrobe"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "354C",
+      "new_code": "BNS",
+      "new_section": "77",
+      "title": "Voyeurism"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "354D",
+      "new_code": "BNS",
+      "new_section": "78",
+      "title": "Stalking"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "355",
+      "new_code": "BNS",
+      "new_section": "133",
+      "title": "Assault or criminal force with intent to dishonour person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "356",
+      "new_code": "BNS",
+      "new_section": "134",
+      "title": "Assault or criminal force in attempt to commit theft"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "357",
+      "new_code": "BNS",
+      "new_section": "135",
+      "title": "Assault or criminal force in attempt wrongfully to confine a person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "358",
+      "new_code": "BNS",
+      "new_section": "136",
+      "title": "Assault or criminal force on grave provocation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "359",
+      "new_code": "BNS",
+      "new_section": "137(1)",
+      "title": "Kidnapping"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "360",
+      "new_code": "BNS",
+      "new_section": "137(1)(a)",
+      "title": "Kidnapping from India"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "361",
+      "new_code": "BNS",
+      "new_section": "137(1)(b)",
+      "title": "Kidnapping from lawful guardianship"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "362",
+      "new_code": "BNS",
+      "new_section": "138",
+      "title": "Abduction"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "363",
+      "new_code": "BNS",
+      "new_section": "137(2)",
+      "title": "Punishment for kidnapping"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "363A",
+      "new_code": "BNS",
+      "new_section": "139",
+      "title": "Kidnapping or maiming a minor for purposes of begging"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "364",
+      "new_code": "BNS",
+      "new_section": "140(1)",
+      "title": "Kidnapping or abducting in order to murder"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "364A",
+      "new_code": "BNS",
+      "new_section": "140(2)",
+      "title": "Kidnapping for ransom"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "365",
+      "new_code": "BNS",
+      "new_section": "140(3)",
+      "title": "Kidnapping or abducting with intent secretly and wrongfully to confine person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "366",
+      "new_code": "BNS",
+      "new_section": "87",
+      "title": "Kidnapping abducting or inducing woman to compel her marriage"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "366A",
+      "new_code": "BNS",
+      "new_section": "96",
+      "title": "Procuration of minor girl"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "366B",
+      "new_code": "BNS",
+      "new_section": "141",
+      "title": "Importation of girl from foreign country"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "367",
+      "new_code": "BNS",
+      "new_section": "140(4)",
+      "title": "Kidnapping or abducting in order to subject person to grievous hurt slavery"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "368",
+      "new_code": "BNS",
+      "new_section": "142",
+      "title": "Wrongfully concealing or keeping in confinement kidnapped person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "369",
+      "new_code": "BNS",
+      "new_section": "97",
+      "title": "Kidnapping or abducting child under ten years with intent to steal"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "370",
+      "new_code": "BNS",
+      "new_section": "143",
+      "title": "Trafficking of person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "370A",
+      "new_code": "BNS",
+      "new_section": "144",
+      "title": "Exploitation of a trafficked person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "371",
+      "new_code": "BNS",
+      "new_section": "145",
+      "title": "Habitual dealing in slaves"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "372",
+      "new_code": "BNS",
+      "new_section": "98",
+      "title": "Selling minor for purposes of prostitution"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "373",
+      "new_code": "BNS",
+      "new_section": "99",
+      "title": "Buying minor for purposes of prostitution"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "374",
+      "new_code": "BNS",
+      "new_section": "146",
+      "title": "Unlawful compulsory labour"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "375",
+      "new_code": "BNS",
+      "new_section": "63",
+      "title": "Rape"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "376",
+      "new_code": "BNS",
+      "new_section": "64",
+      "title": "Punishment for rape"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "376(3)",
+      "new_code": "BNS",
+      "new_section": "65(1)",
+      "title": "Punishment for rape on woman under sixteen years"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "376A",
+      "new_code": "BNS",
+      "new_section": "66",
+      "title": "Punishment for causing death or resulting in persistent vegetative state of victim"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "376AB",
+      "new_code": "BNS",
+      "new_section": "65(2)",
+      "title": "Punishment for rape on woman under twelve years of age"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "376B",
+      "new_code": "BNS",
+      "new_section": "67",
+      "title": "Sexual intercourse by husband upon his wife during separation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "376C",
+      "new_code": "BNS",
+      "new_section": "68",
+      "title": "Sexual intercourse by a person in authority"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "376D",
+      "new_code": "BNS",
+      "new_section": "70(1)",
+      "title": "Gang rape"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "376DA",
+      "new_code": "BNS",
+      "new_section": "70(2)",
+      "title": "Punishment for gang rape on woman under sixteen years of age"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "376DB",
+      "new_code": "BNS",
+      "new_section": "70(2)",
+      "title": "Punishment for gang rape on woman under twelve years of age"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "376E",
+      "new_code": "BNS",
+      "new_section": "71",
+      "title": "Punishment for repeat offenders"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "377",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Unnatural Offences - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "378",
+      "new_code": "BNS",
+      "new_section": "303(1)",
+      "title": "Theft"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "379",
+      "new_code": "BNS",
+      "new_section": "303(2)",
+      "title": "Punishment for theft"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "380",
+      "new_code": "BNS",
+      "new_section": "305",
+      "title": "Theft in dwelling house"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "381",
+      "new_code": "BNS",
+      "new_section": "306",
+      "title": "Theft by clerk or servant of property in possession of master"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "382",
+      "new_code": "BNS",
+      "new_section": "307",
+      "title": "Theft after preparation made for causing death hurt or restraint"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "383",
+      "new_code": "BNS",
+      "new_section": "308(1)",
+      "title": "Extortion"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "384",
+      "new_code": "BNS",
+      "new_section": "308(2)",
+      "title": "Punishment for extortion"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "385",
+      "new_code": "BNS",
+      "new_section": "308(3)",
+      "title": "Putting person in fear of injury in order to commit extortion"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "386",
+      "new_code": "BNS",
+      "new_section": "308(5)",
+      "title": "Extortion by putting a person in fear of death or grievous hurt"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "387",
+      "new_code": "BNS",
+      "new_section": "308(4)",
+      "title": "Putting person in fear of death or of grievous hurt in order to commit extortion"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "388",
+      "new_code": "BNS",
+      "new_section": "308(7)",
+      "title": "Extortion by threat of accusation of an offence punishable with death"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "389",
+      "new_code": "BNS",
+      "new_section": "308(6)",
+      "title": "Putting person in fear or accusation of offence in order to commit extortion"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "390",
+      "new_code": "BNS",
+      "new_section": "309(1), 309(2), 309(3)",
+      "title": "Robbery"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "391",
+      "new_code": "BNS",
+      "new_section": "310(1)",
+      "title": "Dacoity"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "392",
+      "new_code": "BNS",
+      "new_section": "309(4)",
+      "title": "Punishment for robbery"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "393",
+      "new_code": "BNS",
+      "new_section": "309(5)",
+      "title": "Attempt to commit robbery"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "394",
+      "new_code": "BNS",
+      "new_section": "309(6)",
+      "title": "Voluntarily causing hurt in committing robbery"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "395",
+      "new_code": "BNS",
+      "new_section": "310(2)",
+      "title": "Punishment for dacoity"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "396",
+      "new_code": "BNS",
+      "new_section": "310(3)",
+      "title": "Dacoity with murder"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "397",
+      "new_code": "BNS",
+      "new_section": "311",
+      "title": "Robbery or dacoity with attempt to cause death or grievous hurt"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "398",
+      "new_code": "BNS",
+      "new_section": "312",
+      "title": "Attempt to commit robbery or dacoity when armed with deadly weapon"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "399",
+      "new_code": "BNS",
+      "new_section": "310(4)",
+      "title": "Making preparation to commit dacoity"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "400",
+      "new_code": "BNS",
+      "new_section": "310(6)",
+      "title": "Punishment for belonging to gang of dacoits"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "401",
+      "new_code": "BNS",
+      "new_section": "313",
+      "title": "Punishment for belonging to gang of thieves"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "402",
+      "new_code": "BNS",
+      "new_section": "310(5)",
+      "title": "Assembling for purpose of committing dacoity"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "403",
+      "new_code": "BNS",
+      "new_section": "314",
+      "title": "Dishonest misappropriation of property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "404",
+      "new_code": "BNS",
+      "new_section": "315",
+      "title": "Dishonest misappropriation of property possessed by deceased person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "405",
+      "new_code": "BNS",
+      "new_section": "316(1)",
+      "title": "Criminal breach of trust"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "406",
+      "new_code": "BNS",
+      "new_section": "316(2)",
+      "title": "Punishment for criminal breach of trust"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "407",
+      "new_code": "BNS",
+      "new_section": "316(3)",
+      "title": "Criminal breach of trust by carrier"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "408",
+      "new_code": "BNS",
+      "new_section": "316(4)",
+      "title": "Criminal breach of trust by clerk or servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "409",
+      "new_code": "BNS",
+      "new_section": "316(5)",
+      "title": "Criminal breach of trust by public servant or by banker merchant or agent"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "410",
+      "new_code": "BNS",
+      "new_section": "317(1)",
+      "title": "Stolen property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "411",
+      "new_code": "BNS",
+      "new_section": "317(2)",
+      "title": "Dishonestly receiving stolen property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "412",
+      "new_code": "BNS",
+      "new_section": "317(3)",
+      "title": "Dishonestly receiving property stolen in the commission of a dacoity"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "413",
+      "new_code": "BNS",
+      "new_section": "317(4)",
+      "title": "Habitually dealing in stolen property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "414",
+      "new_code": "BNS",
+      "new_section": "317(5)",
+      "title": "Assisting in concealment of stolen property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "415",
+      "new_code": "BNS",
+      "new_section": "318(1)",
+      "title": "Cheating"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "416",
+      "new_code": "BNS",
+      "new_section": "319(1)",
+      "title": "Cheating by personation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "417",
+      "new_code": "BNS",
+      "new_section": "318(2)",
+      "title": "Punishment for cheating"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "418",
+      "new_code": "BNS",
+      "new_section": "318(3)",
+      "title": "Cheating with knowledge that wrongful loss may ensue"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "419",
+      "new_code": "BNS",
+      "new_section": "319(2)",
+      "title": "Punishment of cheating by personation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "420",
+      "new_code": "BNS",
+      "new_section": "318(4)",
+      "title": "Cheating and dishonestly inducing delivery of property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "421",
+      "new_code": "BNS",
+      "new_section": "320",
+      "title": "Dishonest or fraudulent removal or concealment of property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "422",
+      "new_code": "BNS",
+      "new_section": "321",
+      "title": "Dishonestly or fraudulently preventing debt being available for creditors"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "423",
+      "new_code": "BNS",
+      "new_section": "322",
+      "title": "Dishonest or fraudulent execution of deed of transfer"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "424",
+      "new_code": "BNS",
+      "new_section": "323",
+      "title": "Dishonest or fraudulent removal or concealment of property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "425",
+      "new_code": "BNS",
+      "new_section": "324(1)",
+      "title": "Mischief"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "426",
+      "new_code": "BNS",
+      "new_section": "324(2)",
+      "title": "Punishment for mischief"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "427",
+      "new_code": "BNS",
+      "new_section": "324(4)",
+      "title": "Mischief causing damage to the amount of fifty rupees"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "428",
+      "new_code": "BNS",
+      "new_section": "325",
+      "title": "Mischief by killing or maiming animal of the value of ten rupees"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "429",
+      "new_code": "BNS",
+      "new_section": "325",
+      "title": "Mischief by killing or maiming cattle etc"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "430",
+      "new_code": "BNS",
+      "new_section": "326(a)",
+      "title": "Mischief by injury to works of irrigation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "431",
+      "new_code": "BNS",
+      "new_section": "326(b)",
+      "title": "Mischief by injury to public road bridge river or channel"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "432",
+      "new_code": "BNS",
+      "new_section": "326(c)",
+      "title": "Mischief by causing inundation or obstruction to public drainage"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "433",
+      "new_code": "BNS",
+      "new_section": "326(d)",
+      "title": "Mischief by destroying or moving a light-house or sea-mark"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "434",
+      "new_code": "BNS",
+      "new_section": "326(e)",
+      "title": "Mischief by destroying or moving a landmark"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "435",
+      "new_code": "BNS",
+      "new_section": "326(f)",
+      "title": "Mischief by fire or explosive substance"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "436",
+      "new_code": "BNS",
+      "new_section": "326(g)",
+      "title": "Mischief by fire or explosive substance with intent to destroy house"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "437",
+      "new_code": "BNS",
+      "new_section": "327(1)",
+      "title": "Mischief with intent to destroy or make unsafe a decked vessel"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "438",
+      "new_code": "BNS",
+      "new_section": "327(2)",
+      "title": "Punishment for the mischief described in section 437"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "439",
+      "new_code": "BNS",
+      "new_section": "328",
+      "title": "Punishment for intentionally running vessel aground or ashore"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "440",
+      "new_code": "BNS",
+      "new_section": "324(6)",
+      "title": "Mischief committed after preparation made for causing death or hurt"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "441",
+      "new_code": "BNS",
+      "new_section": "329(1)",
+      "title": "Criminal trespass"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "442",
+      "new_code": "BNS",
+      "new_section": "329(2)",
+      "title": "House-trespass"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "443",
+      "new_code": "BNS",
+      "new_section": "330(1)",
+      "title": "Lurking house-trespass"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "444",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Lurking house-trespass by night - DELETED (Merged into BNS 330)"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "445",
+      "new_code": "BNS",
+      "new_section": "330(2)",
+      "title": "House-breaking"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "446",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "House-breaking by night - DELETED (Merged into BNS 330)"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "447",
+      "new_code": "BNS",
+      "new_section": "329(3)",
+      "title": "Punishment for criminal trespass"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "448",
+      "new_code": "BNS",
+      "new_section": "329(4)",
+      "title": "Punishment for house-trespass"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "449",
+      "new_code": "BNS",
+      "new_section": "332(a)",
+      "title": "House-trespass in order to commit offence punishable with death"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "450",
+      "new_code": "BNS",
+      "new_section": "332(b)",
+      "title": "House-trespass in order to commit offence punishable with imprisonment for life"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "451",
+      "new_code": "BNS",
+      "new_section": "332(c)",
+      "title": "House-trespass in order to commit offence punishable with imprisonment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "452",
+      "new_code": "BNS",
+      "new_section": "333",
+      "title": "House-trespass after preparation for hurt assault or wrongful restraint"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "453",
+      "new_code": "BNS",
+      "new_section": "331(1)",
+      "title": "Punishment for lurking house-trespass or house-breaking"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "454",
+      "new_code": "BNS",
+      "new_section": "331(3)",
+      "title": "Lurking house-trespass or house-breaking in order to commit offence punishable with imprisonment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "455",
+      "new_code": "BNS",
+      "new_section": "331(5)",
+      "title": "Lurking house-trespass or house-breaking after preparation for hurt assault or wrongful restraint"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "456",
+      "new_code": "BNS",
+      "new_section": "331(2)",
+      "title": "Punishment for lurking house-trespass or house-breaking by night"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "457",
+      "new_code": "BNS",
+      "new_section": "331(4)",
+      "title": "Lurking house-trespass or house-breaking by night in order to commit offence punishable with imprisonment"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "458",
+      "new_code": "BNS",
+      "new_section": "331(6)",
+      "title": "Lurking house-trespass or house-breaking by night after preparation for hurt assault or wrongful restraint"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "459",
+      "new_code": "BNS",
+      "new_section": "331(7)",
+      "title": "Grievous hurt caused whilst committing lurking house-trespass or house-breaking"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "460",
+      "new_code": "BNS",
+      "new_section": "331(8)",
+      "title": "All persons jointly concerned in lurking house-trespass or house-breaking by night punishable where death or grievous hurt caused by one of them"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "461",
+      "new_code": "BNS",
+      "new_section": "334(1)",
+      "title": "Dishonestly breaking open receptacle containing property"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "462",
+      "new_code": "BNS",
+      "new_section": "334(2)",
+      "title": "Punishment for same offence when committed by person entrusted with custody"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "463",
+      "new_code": "BNS",
+      "new_section": "336(1)",
+      "title": "Forgery"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "464",
+      "new_code": "BNS",
+      "new_section": "335",
+      "title": "Making a false document"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "465",
+      "new_code": "BNS",
+      "new_section": "336(2)",
+      "title": "Punishment for forgery"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "466",
+      "new_code": "BNS",
+      "new_section": "337",
+      "title": "Forgery of record of Court or of public register"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "467",
+      "new_code": "BNS",
+      "new_section": "338",
+      "title": "Forgery of valuable security will etc"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "468",
+      "new_code": "BNS",
+      "new_section": "336(3)",
+      "title": "Forgery for purpose of cheating"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "469",
+      "new_code": "BNS",
+      "new_section": "336(4)",
+      "title": "Forgery for purpose of harming reputation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "470",
+      "new_code": "BNS",
+      "new_section": "340(1)",
+      "title": "Forged document or electronic record"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "471",
+      "new_code": "BNS",
+      "new_section": "340(2)",
+      "title": "Using as genuine a forged document or electronic record"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "472",
+      "new_code": "BNS",
+      "new_section": "341(1)",
+      "title": "Making or possessing counterfeit seal with intent to commit forgery punishable under section 467"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "473",
+      "new_code": "BNS",
+      "new_section": "341(2)",
+      "title": "Making or possessing counterfeit seal with intent to commit forgery punishable otherwise"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "474",
+      "new_code": "BNS",
+      "new_section": "339",
+      "title": "Having possession of document described in section 466 or 467 knowing it to be forged and intending to use it as genuine"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "475",
+      "new_code": "BNS",
+      "new_section": "342(1)",
+      "title": "Counterfeiting device or mark used for authenticating documents described in section 467"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "476",
+      "new_code": "BNS",
+      "new_section": "342(2)",
+      "title": "Counterfeiting device or mark used for authenticating documents other than those described in section 467"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "477",
+      "new_code": "BNS",
+      "new_section": "343",
+      "title": "Fraudulent cancellation destruction etc of will authority to adopt or valuable security"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "477A",
+      "new_code": "BNS",
+      "new_section": "344",
+      "title": "Falsification of accounts"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "479",
+      "new_code": "BNS",
+      "new_section": "345(1)",
+      "title": "Property mark"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "481",
+      "new_code": "BNS",
+      "new_section": "345(2)",
+      "title": "Using a false property mark"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "482",
+      "new_code": "BNS",
+      "new_section": "345(3)",
+      "title": "Punishment for using a false property mark"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "483",
+      "new_code": "BNS",
+      "new_section": "347(1)",
+      "title": "Counterfeiting a property mark used by another"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "484",
+      "new_code": "BNS",
+      "new_section": "347(2)",
+      "title": "Counterfeiting a mark used by a public servant"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "485",
+      "new_code": "BNS",
+      "new_section": "348",
+      "title": "Making or possession of any instrument for counterfeiting a property mark"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "486",
+      "new_code": "BNS",
+      "new_section": "349",
+      "title": "Selling goods marked with a counterfeit property mark"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "487",
+      "new_code": "BNS",
+      "new_section": "350(1)",
+      "title": "Making a false mark upon any receptacle containing goods"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "488",
+      "new_code": "BNS",
+      "new_section": "350(2)",
+      "title": "Punishment for making use of any such false mark"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "489",
+      "new_code": "BNS",
+      "new_section": "346",
+      "title": "Tampering with property mark with intent to cause injury"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "489A",
+      "new_code": "BNS",
+      "new_section": "178",
+      "title": "Counterfeiting currency-notes or bank-notes"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "489B",
+      "new_code": "BNS",
+      "new_section": "179",
+      "title": "Using as genuine forged or counterfeit currency-notes or bank-notes"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "489C",
+      "new_code": "BNS",
+      "new_section": "180",
+      "title": "Possession of forged or counterfeit currency-notes or bank-notes"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "489D",
+      "new_code": "BNS",
+      "new_section": "181",
+      "title": "Making or possessing instruments or materials for forging or counterfeiting currency notes or bank-notes"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "489E",
+      "new_code": "BNS",
+      "new_section": "182",
+      "title": "Making or using documents resembling currency-notes or bank-notes"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "491",
+      "new_code": "BNS",
+      "new_section": "357",
+      "title": "Breach of contract to attend on and supply wants of helpless person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "493",
+      "new_code": "BNS",
+      "new_section": "81",
+      "title": "Cohabitation caused by a man deceitfully inducing a belief of lawful marriage"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "494",
+      "new_code": "BNS",
+      "new_section": "82(1)",
+      "title": "Marrying again during lifetime of husband or wife"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "495",
+      "new_code": "BNS",
+      "new_section": "82(2)",
+      "title": "Same offence with concealment of former marriage"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "496",
+      "new_code": "BNS",
+      "new_section": "83",
+      "title": "Marriage ceremony fraudulently gone through without lawful marriage"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "497",
+      "new_code": "BNS",
+      "new_section": "Deleted",
+      "title": "Adultery - DELETED"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "498",
+      "new_code": "BNS",
+      "new_section": "84",
+      "title": "Enticing or taking away or detaining with criminal intent a married woman"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "498A",
+      "new_code": "BNS",
+      "new_section": "85, 86",
+      "title": "Husband or relative of husband of a woman subjecting her to cruelty"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "499",
+      "new_code": "BNS",
+      "new_section": "356(1)",
+      "title": "Defamation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "500",
+      "new_code": "BNS",
+      "new_section": "356(2)",
+      "title": "Punishment for defamation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "501",
+      "new_code": "BNS",
+      "new_section": "356(3)",
+      "title": "Printing or engraving matter known to be defamatory"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "502",
+      "new_code": "BNS",
+      "new_section": "356(4)",
+      "title": "Sale of printed or engraved substance containing defamatory matter"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "503",
+      "new_code": "BNS",
+      "new_section": "351(1)",
+      "title": "Criminal intimidation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "504",
+      "new_code": "BNS",
+      "new_section": "352",
+      "title": "Intentional insult with intent to provoke breach of the peace"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "505",
+      "new_code": "BNS",
+      "new_section": "353",
+      "title": "Statements conducing to public mischief"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "506",
+      "new_code": "BNS",
+      "new_section": "351(2), 351(3)",
+      "title": "Punishment for criminal intimidation"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "507",
+      "new_code": "BNS",
+      "new_section": "351(4)",
+      "title": "Criminal intimidation by an anonymous communication"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "508",
+      "new_code": "BNS",
+      "new_section": "354",
+      "title": "Act caused by inducing person to believe that he will be rendered an object of the Divine displeasure"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "509",
+      "new_code": "BNS",
+      "new_section": "79",
+      "title": "Word gesture or act intended to insult the modesty of a woman"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "510",
+      "new_code": "BNS",
+      "new_section": "355",
+      "title": "Misconduct in public by a drunken person"
+    },
+    {
+      "old_code": "IPC",
+      "old_section": "511",
+      "new_code": "BNS",
+      "new_section": "62",
+      "title": "Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment"
     }
-]
+  ],
+  "new_bns_sections": [
+    {
+      "new_code": "BNS",
+      "new_section": "1(2)",
+      "title": "Commencement - NEW",
+      "notes": "Power to appoint commencement date delegated to Central Government"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "2(3)",
+      "title": "Definition of Child - NEW",
+      "notes": "Child means any person below the age of eighteen years"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "2(39)",
+      "title": "Words and expressions used but not defined - NEW",
+      "notes": "References to IT Act 2000 and BNSS 2023 for undefined terms"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "48",
+      "title": "Abetment outside India for offence in India - NEW",
+      "notes": "Person who abets an offence from outside India"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "69",
+      "title": "Sexual intercourse by employing deceitful means - NEW",
+      "notes": "Includes false promise to marry"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "95",
+      "title": "Hiring employing or engaging a child to commit an offence - NEW",
+      "notes": "Includes sexual exploitation and pornography"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "103(2)",
+      "title": "Punishment for murder by mob - NEW",
+      "notes": "Group of five or more persons committing murder on grounds of race, caste, community, sex, place of birth, language, personal belief"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "106(2)",
+      "title": "Causing death by negligence escape provision - NEW",
+      "notes": "Not yet in force as of 1st July 2024"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "111",
+      "title": "Organised crime - NEW",
+      "notes": "Includes kidnapping, robbery, vehicle theft, extortion, land grabbing, contract killing, cyber-crimes, trafficking"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "112",
+      "title": "Petty organised crime - NEW",
+      "notes": "Theft, snatching, cheating, unauthorised selling of tickets, gambling, selling public examination question papers"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "113",
+      "title": "Terrorist act - NEW",
+      "notes": "Comprehensive definition of terrorist activities"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "117(3)",
+      "title": "Voluntarily causing grievous hurt resulting in permanent disability - NEW",
+      "notes": "Punishment for permanent disability or persistent vegetative state"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "117(4)",
+      "title": "Voluntarily causing grievous hurt by mob - NEW",
+      "notes": "Group of five or more persons on grounds of race, caste, community, etc."
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "152",
+      "title": "Acts endangering sovereignty unity and integrity of India - NEW",
+      "notes": "Replaces sedition; includes electronic communication and financial means"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "197(1)(d)",
+      "title": "Publishing false or misleading information jeopardising sovereignty - NEW",
+      "notes": "New clause for false information affecting national security"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "226",
+      "title": "Attempt to commit suicide to compel or restrain exercise of lawful power - NEW",
+      "notes": "Attempt to commit suicide to compel public servant from discharging duty"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "304",
+      "title": "Snatching - NEW",
+      "notes": "New specific offence for snatching"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "324(3)",
+      "title": "Mischief causing loss or damage to Government or Local Authority property - NEW",
+      "notes": "New provision for damage to government property"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "324(5)",
+      "title": "Mischief causing loss or damage of one lakh rupees or more - NEW",
+      "notes": "Enhanced punishment for higher value damage"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "341(3)",
+      "title": "Possessing counterfeit seal plate or instrument - NEW",
+      "notes": "New sub-section for possession of counterfeit instruments"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "341(4)",
+      "title": "Fraudulently using counterfeit seal plate or instrument - NEW",
+      "notes": "New sub-section for fraudulent use of counterfeit instruments"
+    },
+    {
+      "new_code": "BNS",
+      "new_section": "358",
+      "title": "Repeal and Savings - NEW",
+      "notes": "Provisions for repeal of IPC and savings for pending cases"
+    }
+  ]
+}

@@ -1,21 +1,41 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 
-// API URL - use /api prefix which Vercel will proxy to backend
-const API_URL = '/api'
+// API URL - local dev uses localhost, production uses /api (Netlify redirect)
+const API_URL = import.meta.env.DEV ? 'http://localhost:8000' : '/api'
 
 interface SearchResult {
     doc_id: string
+    title: string
     content: string
     score: number
-    source: string
+    year?: number
+    court: string
+    statutes: string[]
+    keywords: string[]
+}
+
+interface StatuteMapping {
+    old_code: string
+    old_section: string
+    new_code: string
+    new_section: string
+    title: string
+}
+
+interface KgConcept {
+    id: string
+    name: string
 }
 
 interface SearchResponse {
     query: string
+    statute_mapping: StatuteMapping | null
+    related_statutes: Array<{ id: string; title: string }>
+    kg_concepts: KgConcept[]
     results: SearchResult[]
-    llm_response: string
-    timestamp: string
+    total_results: number
+    lightrag_answer?: string  // AI-generated answer from LightRAG
 }
 
 function App() {
@@ -24,7 +44,6 @@ function App() {
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState<string | null>(null)
     const [darkMode, setDarkMode] = useState(false)
-    const [token, setToken] = useState<string | null>(null)
 
     useEffect(() => {
         // Check for saved theme preference
@@ -33,12 +52,6 @@ function App() {
             setDarkMode(true)
             document.documentElement.setAttribute('data-theme', 'dark')
         }
-
-        // Check for saved token
-        const savedToken = localStorage.getItem('token')
-        if (savedToken) {
-            setToken(savedToken)
-        }
     }, [])
 
     const toggleDarkMode = () => {
@@ -46,26 +59,6 @@ function App() {
         setDarkMode(newMode)
         document.documentElement.setAttribute('data-theme', newMode ? 'dark' : 'light')
         localStorage.setItem('theme', newMode ? 'dark' : 'light')
-    }
-
-    const handleLogin = async (username: string, password: string) => {
-        try {
-            const response = await fetch(`${API_URL}/login`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ username, password }),
-            })
-
-            if (!response.ok) {
-                throw new Error('Login failed')
-            }
-
-            const data = await response.json()
-            setToken(data.access_token)
-            localStorage.setItem('token', data.access_token)
-        } catch (err) {
-            setError('Login failed. Please check your credentials.')
-        }
     }
 
     const handleSearch = async () => {
@@ -79,7 +72,6 @@ function App() {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${token}`,
                 },
                 body: JSON.stringify({ query, top_k: 10 }),
             })
@@ -92,6 +84,7 @@ function App() {
             setResults(data)
         } catch (err) {
             setError('Search failed. Please try again.')
+            console.error(err)
         } finally {
             setLoading(false)
         }
@@ -118,94 +111,107 @@ function App() {
 
             {/* Main Content */}
             <main className="main">
-                {/* Login Section (if not authenticated) */}
-                {!token && (
-                    <div className="login-card">
-                        <h2>Login</h2>
-                        <p>Demo credentials: practitioner_demo / demo123</p>
-                        <div className="login-form">
-                            <input
-                                type="text"
-                                id="username"
-                                placeholder="Username"
-                                className="input"
-                            />
-                            <input
-                                type="password"
-                                id="password"
-                                placeholder="Password"
-                                className="input"
-                            />
-                            <button
-                                className="btn btn-primary"
-                                onClick={() => {
-                                    const username = (document.getElementById('username') as HTMLInputElement).value
-                                    const password = (document.getElementById('password') as HTMLInputElement).value
-                                    handleLogin(username, password)
-                                }}
-                            >
-                                Login
-                            </button>
-                        </div>
+                {/* Search Section */}
+                <div className="search-section">
+                    <div className="search-box">
+                        <input
+                            type="text"
+                            className="search-input"
+                            placeholder="Search legal documents (e.g., 'IPC 377', 'medical negligence', 'right to privacy')"
+                            value={query}
+                            onChange={(e) => setQuery(e.target.value)}
+                            onKeyPress={handleKeyPress}
+                        />
+                        <button
+                            className="btn btn-primary search-btn"
+                            onClick={handleSearch}
+                            disabled={loading}
+                        >
+                            {loading ? 'Searching...' : 'Search'}
+                        </button>
+                    </div>
+                </div>
+
+                {/* Error Message */}
+                {error && (
+                    <div className="error-message">
+                        {error}
                     </div>
                 )}
 
-                {/* Search Section */}
-                {token && (
-                    <>
-                        <div className="search-section">
-                            <div className="search-box">
-                                <input
-                                    type="text"
-                                    className="search-input"
-                                    placeholder="Search legal documents (e.g., 'medical negligence cases')"
-                                    value={query}
-                                    onChange={(e) => setQuery(e.target.value)}
-                                    onKeyPress={handleKeyPress}
-                                />
-                                <button
-                                    className="btn btn-primary search-btn"
-                                    onClick={handleSearch}
-                                    disabled={loading}
-                                >
-                                    {loading ? 'Searching...' : 'Search'}
-                                </button>
-                            </div>
-                        </div>
-
-                        {/* Error Message */}
-                        {error && (
-                            <div className="error-message">
-                                {error}
+                {/* Results Section */}
+                {results && (
+                    <div className="results-section">
+                        {/* Statute Mapping (if found) */}
+                        {results.statute_mapping && (
+                            <div className="statute-mapping">
+                                <h3>📜 Statute Mapping</h3>
+                                <div className="mapping-card">
+                                    <span className="old-statute">
+                                        {results.statute_mapping.old_code} Section {results.statute_mapping.old_section}
+                                    </span>
+                                    <span className="arrow">→</span>
+                                    <span className="new-statute">
+                                        {results.statute_mapping.new_code} Section {results.statute_mapping.new_section}
+                                    </span>
+                                    <p className="mapping-title">{results.statute_mapping.title}</p>
+                                </div>
                             </div>
                         )}
 
-                        {/* Results Section */}
-                        {results && (
-                            <div className="results-section">
-                                {/* LLM Response */}
-                                <div className="llm-response">
-                                    <h3>AI Summary</h3>
-                                    <p>{results.llm_response}</p>
+                        {/* AI Answer from LightRAG */}
+                        {results.lightrag_answer && (
+                            <div className="ai-answer">
+                                <h3>🤖 AI Answer</h3>
+                                <div className="ai-answer-content">
+                                    <p>{results.lightrag_answer}</p>
                                 </div>
+                            </div>
+                        )}
 
-                                {/* Retrieved Documents */}
-                                <div className="documents">
-                                    <h3>Retrieved Documents</h3>
-                                    {results.results.map((result, index) => (
-                                        <div key={index} className="document-card">
-                                            <div className="document-header">
-                                                <span className="doc-id">{result.doc_id}</span>
-                                                <span className="doc-source">{result.source}</span>
-                                                <span className="doc-score">{(result.score * 100).toFixed(1)}%</span>
-                                            </div>
-                                            <p className="doc-content">{result.content}</p>
-                                        </div>
+                        {/* KG Concepts */}
+                        {results.kg_concepts.length > 0 && (
+                            <div className="kg-concepts">
+                                <h4>🔗 Related Concepts</h4>
+                                <div className="concept-tags">
+                                    {results.kg_concepts.map((concept) => (
+                                        <span key={concept.id} className="concept-tag">
+                                            {concept.name || concept.id}
+                                        </span>
                                     ))}
                                 </div>
                             </div>
                         )}
-                    </>
+
+                        {/* Retrieved Documents */}
+                        <div className="documents">
+                            <h3>📚 Retrieved Documents ({results.total_results})</h3>
+                            {results.results.length === 0 ? (
+                                <p className="no-results">No documents found. Try a different query.</p>
+                            ) : (
+                                results.results.map((result, index) => (
+                                    <div key={index} className="document-card">
+                                        <div className="document-header">
+                                            <h4 className="doc-title">{result.title}</h4>
+                                            <span className="doc-score">{(result.score * 100).toFixed(0)}% match</span>
+                                        </div>
+                                        <div className="doc-meta">
+                                            {result.year && <span className="doc-year">{result.year}</span>}
+                                            {result.court && <span className="doc-court">{result.court}</span>}
+                                        </div>
+                                        <p className="doc-content">{result.content}</p>
+                                        {result.statutes.length > 0 && (
+                                            <div className="doc-statutes">
+                                                {result.statutes.map((s, i) => (
+                                                    <span key={i} className="statute-tag">{s}</span>
+                                                ))}
+                                            </div>
+                                        )}
+                                    </div>
+                                ))
+                            )}
+                        </div>
+                    </div>
                 )}
             </main>
 

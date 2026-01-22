@@ -1,0 +1,2 @@
+# No external dependencies needed - uses stdlib only
+# Groq API is called via urllib

@@ -7,24 +7,26 @@
  * - GET /api - Health check
  */
 
+const fs = require('fs');
+const path = require('path');
+
 // ============================================================================
-// KNOWLEDGE GRAPH DATA (Embedded for serverless)
+// KNOWLEDGE GRAPH DATA (Loaded from files + embedded)
 // ============================================================================
 
-const STATUTE_MAPPINGS = {
-    "302": { bns: "103", desc: "Punishment for murder" },
-    "304": { bns: "105", desc: "Culpable homicide not amounting to murder" },
-    "304A": { bns: "106", desc: "Causing death by negligence" },
-    "307": { bns: "109", desc: "Attempt to murder" },
-    "376": { bns: "63", desc: "Rape" },
-    "377": { bns: "None", desc: "Unnatural offences (decriminalized)" },
-    "420": { bns: "316", desc: "Cheating" },
-    "498A": { bns: "84", desc: "Cruelty by husband or relatives" },
-    "499": { bns: "354", desc: "Defamation" },
-    "506": { bns: "349", desc: "Criminal intimidation" },
-    "299": { bns: "100", desc: "Culpable homicide" },
-    "300": { bns: "101", desc: "Murder" },
-};
+// Load 554 IPC to BNS mappings
+let STATUTE_MAPPINGS = {};
+try {
+    STATUTE_MAPPINGS = require('./mappings.json');
+} catch (e) {
+    console.error("Could not load mappings.json, using fallback");
+    STATUTE_MAPPINGS = {
+        "302": { b: "103", t: "Punishment for murder" },
+        "304A": { b: "106", t: "Causing death by negligence" },
+        "377": { b: "None", t: "Unnatural offences (decriminalized)" },
+        "420": { b: "316", t: "Cheating" },
+    };
+}
 
 const DOCUMENTS = [
     {
@@ -135,8 +137,8 @@ function getStatuteMapping(section) {
             old_code: "IPC",
             old_section: section,
             new_code: "BNS",
-            new_section: mapping.bns,
-            title: mapping.desc
+            new_section: mapping.b,
+            title: mapping.t
         };
     }
     return null;

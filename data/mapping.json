@@ -1,14 +1,4 @@
-{
-  "metadata": {
-    "description": "Mapping of Indian Penal Code (IPC) 1860 sections to Bharatiya Nyaya Sanhita (BNS) 2023 sections",
-    "source_documents": [
-      "BNS_IPC_Comparative.pdf",
-      "COMPARISON_SUMMARY_BNS_to_IPC_.pdf"
-    ],
-    "effective_date": "2024-07-01",
-    "notes": "Sections marked as 'Deleted' have no direct equivalent in BNS. New sections in BNS have no IPC equivalent."
-  },
-  "mappings": [
+ [
     {
       "old_code": "IPC",
       "old_section": "1",
@@ -4022,4 +4012,3 @@
       "notes": "Provisions for repeal of IPC and savings for pending cases"
     }
   ]
-}

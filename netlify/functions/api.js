@@ -223,6 +223,29 @@ function findConcepts(query) {
     return found.slice(0, 5);
 }
 
+// ============================================================================
+// CHAT WITH SSE STREAMING
+// ============================================================================
+
+// Available document IDs for citation linking
+const DOC_IDS = DOCUMENTS.map(d => d.doc_id);
+
+// System prompt that instructs LLM to use citation format
+const CHAT_SYSTEM_PROMPT = `You are a legal research assistant specializing in Indian law.
+
+CITATION FORMAT: When citing a case, ALWAYS use this EXACT format: [Case Name (Year)](doc:case_id)
+Available case IDs you can cite:
+- jacob_mathew_2005 - Medical negligence case
+- puttaswamy_2017 - Right to Privacy
+- navtej_johar_2018 - Section 377 decriminalization
+- kesavananda_bharati_1973 - Basic Structure Doctrine
+- vishaka_1997 - Sexual harassment guidelines
+
+Example citation: "The Supreme Court in [K.S. Puttaswamy v. Union of India (2017)](doc:puttaswamy_2017) held that..."
+
+For IPC to BNS mappings, mention both old and new sections clearly.
+Be concise but thorough. Always cite your sources using the format above.`;
+
 async function callGroqLLM(query, context) {
     const groqKey = process.env.GROQ_API_KEY;
     if (!groqKey) {
@@ -264,6 +287,184 @@ Cite specific case names and years. Keep responses under 200 words.`;
     return null;
 }
 
+/**
+ * Build context from relevant documents for RAG
+ */
+function buildRAGContext(query) {
+    const results = searchDocuments(query, 3);
+    const section = extractStatuteFromQuery(query);
+    const statuteMapping = section ? getStatuteMapping(section) : null;
+
+    let context = results.map(r =>
+        `**${r.title}** (doc:${r.doc_id})\n${r.content}`
+    ).join('\n\n---\n\n');
+
+    if (statuteMapping) {
+        context += `\n\n---\n\n**Statute Mapping:**\nIPC Section ${statuteMapping.old_section} (${statuteMapping.title}) → BNS Section ${statuteMapping.new_section}`;
+    }
+
+    return { context, results, statuteMapping };
+}
+
+/**
+ * Build messages array with history for Groq
+ */
+function buildChatMessages(userMessage, history, ragContext) {
+    const messages = [
+        { role: "system", content: CHAT_SYSTEM_PROMPT }
+    ];
+
+    // Add conversation history (last 10 messages for context window)
+    if (history && Array.isArray(history)) {
+        const recentHistory = history.slice(-10);
+        for (const msg of recentHistory) {
+            messages.push({
+                role: msg.role,
+                content: msg.content
+            });
+        }
+    }
+
+    // Add current message with RAG context
+    const userContent = ragContext
+        ? `Relevant Documents:\n${ragContext}\n\n---\n\nUser Question: ${userMessage}`
+        : userMessage;
+
+    messages.push({ role: "user", content: userContent });
+
+    return messages;
+}
+
+/**
+ * Handle SSE chat endpoint with streaming
+ */
+async function handleChatSSE(event) {
+    const sseHeaders = {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Headers": "Content-Type",
+        "Content-Type": "text/event-stream",
+        "Cache-Control": "no-cache",
+        "Connection": "keep-alive"
+    };
+
+    try {
+        const body = JSON.parse(event.body || "{}");
+        const message = (body.message || "").trim();
+        const sessionId = body.sessionId || "anonymous";
+        const history = body.history || [];
+
+        if (!message) {
+            return {
+                statusCode: 400,
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ error: "Message required" })
+            };
+        }
+
+        const groqKey = process.env.GROQ_API_KEY;
+        if (!groqKey) {
+            return {
+                statusCode: 500,
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ error: "API key not configured" })
+            };
+        }
+
+        // Build RAG context
+        const { context, results, statuteMapping } = buildRAGContext(message);
+
+        // Build messages with history
+        const messages = buildChatMessages(message, history, context);
+
+        // Call Groq with streaming
+        const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+            method: "POST",
+            headers: {
+                "Authorization": `Bearer ${groqKey}`,
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                model: "llama-3.1-8b-instant",
+                messages: messages,
+                max_tokens: 600,
+                temperature: 0.3,
+                stream: true
+            })
+        });
+
+        if (!response.ok) {
+            const errorText = await response.text();
+            return {
+                statusCode: response.status,
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ error: `Groq API error: ${errorText}` })
+            };
+        }
+
+        // Process streaming response
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder();
+        let fullContent = "";
+        let sseBody = "";
+
+        while (true) {
+            const { done, value } = await reader.read();
+            if (done) break;
+
+            const chunk = decoder.decode(value, { stream: true });
+            const lines = chunk.split('\n');
+
+            for (const line of lines) {
+                if (line.startsWith('data: ')) {
+                    const data = line.slice(6);
+                    if (data === '[DONE]') continue;
+
+                    try {
+                        const parsed = JSON.parse(data);
+                        const delta = parsed.choices?.[0]?.delta?.content || "";
+                        if (delta) {
+                            fullContent += delta;
+                            sseBody += `data: ${JSON.stringify({ text: delta })}\n\n`;
+                        }
+                    } catch (e) {
+                        // Skip unparseable chunks
+                    }
+                }
+            }
+        }
+
+        // Extract citations from response
+        const citationPattern = /\[([^\]]+)\]\(doc:([^)]+)\)/g;
+        const citations = [];
+        let match;
+        while ((match = citationPattern.exec(fullContent)) !== null) {
+            citations.push({ title: match[1], docId: match[2] });
+        }
+
+        // Send final event with metadata
+        sseBody += `data: ${JSON.stringify({
+            done: true,
+            citations,
+            statuteMapping,
+            sources: results.map(r => ({ docId: r.doc_id, title: r.title, score: r.score }))
+        })}\n\n`;
+
+        return {
+            statusCode: 200,
+            headers: sseHeaders,
+            body: sseBody
+        };
+
+    } catch (e) {
+        console.error("Chat SSE error:", e);
+        return {
+            statusCode: 500,
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ error: e.message })
+        };
+    }
+}
+
 // ============================================================================
 // MAIN HANDLER
 // ============================================================================
@@ -298,6 +499,11 @@ exports.handler = async (event, context) => {
                 documents: DOCUMENTS.length
             })
         };
+    }
+
+    // Chat SSE endpoint
+    if (path === "/chat" && method === "POST") {
+        return handleChatSSE(event);
     }
 
     // Search endpoint
@@ -367,6 +573,35 @@ exports.handler = async (event, context) => {
                 statusCode: 404,
                 headers,
                 body: JSON.stringify({ error: `No mapping for section ${section}` })
+            };
+        }
+    }
+
+    // Document by ID endpoint
+    if (path.startsWith("/document/")) {
+        const parts = path.split("/");
+        if (parts.length >= 3) {
+            const docId = parts[parts.length - 1];
+            const doc = DOCUMENTS.find(d => d.doc_id === docId);
+            if (doc) {
+                return {
+                    statusCode: 200,
+                    headers,
+                    body: JSON.stringify({
+                        doc_id: doc.doc_id,
+                        title: doc.title,
+                        content: doc.content,
+                        year: doc.year,
+                        court: doc.court,
+                        keywords: doc.keywords,
+                        statutes: doc.statutes
+                    })
+                };
+            }
+            return {
+                statusCode: 404,
+                headers,
+                body: JSON.stringify({ error: `Document not found: ${docId}` })
             };
         }
     }

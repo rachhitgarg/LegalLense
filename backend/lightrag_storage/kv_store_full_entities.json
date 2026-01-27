@@ -1,0 +1,92 @@
+{
+  "doc-a2723a34b1cf1defbd170a1265d28b2a": {
+    "entity_names": [
+      "BNS 106",
+      "State of Punjab",
+      "Malpractice",
+      "Supreme Court of India",
+      "Doctor Liability",
+      "IPC 304A",
+      "Jacob Mathew",
+      "Medical Negligence",
+      "Court",
+      "2005",
+      "Prosecution",
+      "Guidelines for Prosecuting Medical Professionals"
+    ],
+    "count": 12,
+    "create_time": 1769080933,
+    "update_time": 1769080933,
+    "_id": "doc-a2723a34b1cf1defbd170a1265d28b2a"
+  },
+  "doc-07ddda276809bb9638857d460209326e": {
+    "entity_names": [
+      "Fundamental Rights",
+      "1973",
+      "Judicial Review",
+      "Secularism",
+      "Kesavananda Bharati vs State of Kerala",
+      "Supreme Court of India",
+      "Federalism",
+      "Separation of Powers",
+      "Democracy",
+      "Article 368",
+      "Basic Structure Doctrine",
+      "Article 13"
+    ],
+    "count": 12,
+    "create_time": 1769080968,
+    "update_time": 1769080968,
+    "_id": "doc-07ddda276809bb9638857d460209326e"
+  },
+  "doc-47564a09721c5945b7ce73cd55e71d9c": {
+    "entity_names": [
+      "Decriminalization",
+      "Section 377",
+      "Supreme Court of India",
+      "Article 14",
+      "Navtej Singh Johar vs Union of India",
+      "Article 21",
+      "LGBTQ",
+      "Homosexuality",
+      "IPC 377"
+    ],
+    "count": 9,
+    "create_time": 1769080993,
+    "update_time": 1769080993,
+    "_id": "doc-47564a09721c5945b7ce73cd55e71d9c"
+  },
+  "doc-6f25faae2881506597d1a0b31f1ee071": {
+    "entity_names": [
+      "Article 19",
+      "Right to Privacy Judgment",
+      "Data Protection Law in India",
+      "Supreme Court of India",
+      "Article 14",
+      "K.S. Puttaswamy vs Union of India",
+      "Article 21"
+    ],
+    "count": 7,
+    "create_time": 1769081014,
+    "update_time": 1769081014,
+    "_id": "doc-6f25faae2881506597d1a0b31f1ee071"
+  },
+  "doc-ce42f602d723a9b1993320f7fd6fa376": {
+    "entity_names": [
+      "Article 19",
+      "Vishaka vs State of Rajasthan",
+      "Supreme Court of India",
+      "Article 14",
+      "Vishaka Guidelines",
+      "1997",
+      "Sexual Harassment",
+      "Article 21",
+      "POSH Act 2013",
+      "Women's Rights"
+    ],
+    "count": 10,
+    "create_time": 1769081035,
+    "update_time": 1769081035,
+    "_id": "doc-ce42f602d723a9b1993320f7fd6fa376"
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "doc-a2723a34b1cf1defbd170a1265d28b2a": {
+    "relation_pairs": [
+      [
+        "Malpractice",
+        "Supreme Court of India"
+      ],
+      [
+        "Jacob Mathew",
+        "Supreme Court of India"
+      ],
+      [
+        "Medical Negligence",
+        "Supreme Court of India"
+      ],
+      [
+        "Jacob Mathew",
+        "State of Punjab"
+      ],
+      [
+        "Doctor Liability",
+        "Supreme Court of India"
+      ],
+      [
+        "Guidelines for Prosecuting Medical Professionals",
+        "Supreme Court of India"
+      ]
+    ],
+    "count": 6,
+    "create_time": 1769080933,
+    "update_time": 1769080933,
+    "_id": "doc-a2723a34b1cf1defbd170a1265d28b2a"
+  },
+  "doc-07ddda276809bb9638857d460209326e": {
+    "relation_pairs": [
+      [
+        "Basic Structure Doctrine",
+        "Secularism"
+      ],
+      [
+        "Kesavananda Bharati vs State of Kerala",
+        "Supreme Court of India"
+      ],
+      [
+        "Basic Structure Doctrine",
+        "Judicial Review"
+      ],
+      [
+        "Basic Structure Doctrine",
+        "Separation of Powers"
+      ],
+      [
+        "Basic Structure Doctrine",
+        "Federalism"
+      ],
+      [
+        "Basic Structure Doctrine",
+        "Supreme Court of India"
+      ],
+      [
+        "Basic Structure Doctrine",
+        "Fundamental Rights"
+      ],
+      [
+        "Basic Structure Doctrine",
+        "Democracy"
+      ]
+    ],
+    "count": 8,
+    "create_time": 1769080968,
+    "update_time": 1769080968,
+    "_id": "doc-07ddda276809bb9638857d460209326e"
+  },
+  "doc-47564a09721c5945b7ce73cd55e71d9c": {
+    "relation_pairs": [
+      [
+        "Decriminalization",
+        "Supreme Court of India"
+      ],
+      [
+        "Article 21",
+        "Supreme Court of India"
+      ],
+      [
+        "Navtej Singh Johar vs Union of India",
+        "Supreme Court of India"
+      ],
+      [
+        "Article 21",
+        "LGBTQ"
+      ],
+      [
+        "Section 377",
+        "Supreme Court of India"
+      ],
+      [
+        "Homosexuality",
+        "Section 377"
+      ],
+      [
+        "IPC 377",
+        "Navtej Singh Johar vs Union of India"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1769080993,
+    "update_time": 1769080993,
+    "_id": "doc-47564a09721c5945b7ce73cd55e71d9c"
+  },
+  "doc-6f25faae2881506597d1a0b31f1ee071": {
+    "relation_pairs": [
+      [
+        "Article 19",
+        "Right to Privacy Judgment"
+      ],
+      [
+        "Article 14",
+        "Right to Privacy Judgment"
+      ],
+      [
+        "Data Protection Law in India",
+        "Right to Privacy Judgment"
+      ],
+      [
+        "Article 21",
+        "Right to Privacy Judgment"
+      ],
+      [
+        "K.S. Puttaswamy vs Union of India",
+        "Supreme Court of India"
+      ]
+    ],
+    "count": 5,
+    "create_time": 1769081014,
+    "update_time": 1769081014,
+    "_id": "doc-6f25faae2881506597d1a0b31f1ee071"
+  },
+  "doc-ce42f602d723a9b1993320f7fd6fa376": {
+    "relation_pairs": [
+      [
+        "Article 14",
+        "Vishaka vs State of Rajasthan"
+      ],
+      [
+        "Sexual Harassment",
+        "Vishaka vs State of Rajasthan"
+      ],
+      [
+        "Vishaka Guidelines",
+        "Vishaka vs State of Rajasthan"
+      ],
+      [
+        "Article 21",
+        "Vishaka vs State of Rajasthan"
+      ],
+      [
+        "POSH Act 2013",
+        "Vishaka Guidelines"
+      ],
+      [
+        "Supreme Court of India",
+        "Vishaka vs State of Rajasthan"
+      ],
+      [
+        "Article 19",
+        "Vishaka vs State of Rajasthan"
+      ]
+    ],
+    "count": 7,
+    "create_time": 1769081035,
+    "update_time": 1769081035,
+    "_id": "doc-ce42f602d723a9b1993320f7fd6fa376"
+  }
+}

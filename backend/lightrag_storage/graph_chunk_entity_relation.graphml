@@ -1,0 +1,685 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d13" for="edge" attr.name="truncate" attr.type="string" />
+  <key id="d12" for="edge" attr.name="created_at" attr.type="long" />
+  <key id="d11" for="edge" attr.name="file_path" attr.type="string" />
+  <key id="d10" for="edge" attr.name="source_id" attr.type="string" />
+  <key id="d9" for="edge" attr.name="keywords" attr.type="string" />
+  <key id="d8" for="edge" attr.name="description" attr.type="string" />
+  <key id="d7" for="edge" attr.name="weight" attr.type="double" />
+  <key id="d6" for="node" attr.name="truncate" attr.type="string" />
+  <key id="d5" for="node" attr.name="created_at" attr.type="long" />
+  <key id="d4" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d3" for="node" attr.name="source_id" attr.type="string" />
+  <key id="d2" for="node" attr.name="description" attr.type="string" />
+  <key id="d1" for="node" attr.name="entity_type" attr.type="string" />
+  <key id="d0" for="node" attr.name="entity_id" attr.type="string" />
+  <graph edgedefault="undirected">
+    <node id="Jacob Mathew">
+      <data key="d0">Jacob Mathew</data>
+      <data key="d1">person</data>
+      <data key="d2">Jacob Mathew is the individual involved in a landmark legal case regarding medical negligence against the State of Punjab in 2005.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080928</data>
+      <data key="d6" />
+    </node>
+    <node id="State of Punjab">
+      <data key="d0">State of Punjab</data>
+      <data key="d1">location</data>
+      <data key="d2">The State of Punjab is the respondent in the legal case involving Jacob Mathew.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080928</data>
+      <data key="d6" />
+    </node>
+    <node id="Supreme Court of India">
+      <data key="d0">Supreme Court of India</data>
+      <data key="d1">organization</data>
+      <data key="d2">The Supreme Court of India is the judicial authority that adjudicated the case of Jacob Mathew vs State of Punjab in 2005.&lt;SEP&gt;The Supreme Court of India is the highest judicial forum and final court of appeal under the Constitution of India.&lt;SEP&gt;The Supreme Court of India is the highest judicial forum and final court of appeal under the Constitution of India, which ruled on the case.&lt;SEP&gt;The Supreme Court of India is the highest judicial forum and final court of appeal under the Constitution of India.&lt;SEP&gt;The Supreme Court of India is the highest judicial forum and final court of appeal under the Constitution of India, which decided the case.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a&lt;SEP&gt;chunk-07ddda276809bb9638857d460209326e&lt;SEP&gt;chunk-47564a09721c5945b7ce73cd55e71d9c&lt;SEP&gt;chunk-6f25faae2881506597d1a0b31f1ee071&lt;SEP&gt;chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081031</data>
+      <data key="d6" />
+    </node>
+    <node id="IPC 304A">
+      <data key="d0">IPC 304A</data>
+      <data key="d1">statute</data>
+      <data key="d2">IPC 304A is a legal statute related to causing death by negligence, referenced in the case.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080928</data>
+      <data key="d6" />
+    </node>
+    <node id="BNS 106">
+      <data key="d0">BNS 106</data>
+      <data key="d1">statute</data>
+      <data key="d2">BNS 106 is a legal statute mentioned in the context of the court case regarding medical negligence.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080928</data>
+      <data key="d6" />
+    </node>
+    <node id="Medical Negligence">
+      <data key="d0">Medical Negligence</data>
+      <data key="d1">concept</data>
+      <data key="d2">Medical negligence refers to the failure of a medical professional to provide the standard of care that is expected, resulting in harm to a patient.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080928</data>
+      <data key="d6" />
+    </node>
+    <node id="Doctor Liability">
+      <data key="d0">Doctor Liability</data>
+      <data key="d1">concept</data>
+      <data key="d2">Doctor liability entails the legal responsibility of medical professionals for their negligent actions or malpractice.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080928</data>
+      <data key="d6" />
+    </node>
+    <node id="Malpractice">
+      <data key="d0">Malpractice</data>
+      <data key="d1">concept</data>
+      <data key="d2">Malpractice involves professional misconduct or negligence by a healthcare provider that results in harm to a patient.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080928</data>
+      <data key="d6" />
+    </node>
+    <node id="Prosecution">
+      <data key="d0">Prosecution</data>
+      <data key="d1">concept</data>
+      <data key="d2">Prosecution is the legal process of bringing a case against a defendant in a court of law, in this case against medical professionals for negligence.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080929</data>
+      <data key="d6" />
+    </node>
+    <node id="2005">
+      <data key="d0">2005</data>
+      <data key="d1">data</data>
+      <data key="d2">The year 2005 refers to the time when the case of Jacob Mathew vs State of Punjab was adjudicated.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080929</data>
+      <data key="d6" />
+    </node>
+    <node id="Court">
+      <data key="d0">Court</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Court refers to the judicial institution where legal cases are heard and decided, specifically the Supreme Court of India in this instance.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080929</data>
+      <data key="d6" />
+    </node>
+    <node id="Guidelines for Prosecuting Medical Professionals">
+      <data key="d0">Guidelines for Prosecuting Medical Professionals</data>
+      <data key="d1">concept</data>
+      <data key="d2">The guidelines established by the Supreme Court for prosecuting medical professionals in cases of negligence outline the criteria and procedures that must be followed.</data>
+      <data key="d3">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080929</data>
+      <data key="d6" />
+    </node>
+    <node id="Kesavananda Bharati vs State of Kerala">
+      <data key="d0">Kesavananda Bharati vs State of Kerala</data>
+      <data key="d1">event</data>
+      <data key="d2">Kesavananda Bharati vs State of Kerala is a landmark constitutional law case from 1973 involving significant rulings regarding the Indian Constitution.</data>
+      <data key="d3">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080962</data>
+      <data key="d6" />
+    </node>
+    <node id="1973">
+      <data key="d0">1973</data>
+      <data key="d1">data</data>
+      <data key="d2">1973 is the year when the Kesavananda Bharati vs State of Kerala case was decided by the Supreme Court of India.</data>
+      <data key="d3">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080962</data>
+      <data key="d6" />
+    </node>
+    <node id="Article 368">
+      <data key="d0">Article 368</data>
+      <data key="d1">data</data>
+      <data key="d2">Article 368 is a provision in the Indian Constitution that outlines the process for making amendments to the Constitution.</data>
+      <data key="d3">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080962</data>
+      <data key="d6" />
+    </node>
+    <node id="Article 13">
+      <data key="d0">Article 13</data>
+      <data key="d1">data</data>
+      <data key="d2">Article 13 is a provision in the Indian Constitution that deals with laws inconsistent with or in derogation of fundamental rights.</data>
+      <data key="d3">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080962</data>
+      <data key="d6" />
+    </node>
+    <node id="Basic Structure Doctrine">
+      <data key="d0">Basic Structure Doctrine</data>
+      <data key="d1">concept</data>
+      <data key="d2">The Basic Structure Doctrine is a legal principle that asserts certain fundamental features of the Constitution cannot be altered or destroyed by amendments.</data>
+      <data key="d3">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080962</data>
+      <data key="d6" />
+    </node>
+    <node id="Fundamental Rights">
+      <data key="d0">Fundamental Rights</data>
+      <data key="d1">concept</data>
+      <data key="d2">Fundamental Rights are a set of rights guaranteed by the Constitution of India that protect individual freedoms and dignity.</data>
+      <data key="d3">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080962</data>
+      <data key="d6" />
+    </node>
+    <node id="Secularism">
+      <data key="d0">Secularism</data>
+      <data key="d1">concept</data>
+      <data key="d2">Secularism refers to the principle of separating religion from political, social, and educational institutions.</data>
+      <data key="d3">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080962</data>
+      <data key="d6" />
+    </node>
+    <node id="Federalism">
+      <data key="d0">Federalism</data>
+      <data key="d1">concept</data>
+      <data key="d2">Federalism is a system of governance in which power is divided between a central authority and constituent political units.</data>
+      <data key="d3">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080963</data>
+      <data key="d6" />
+    </node>
+    <node id="Separation of Powers">
+      <data key="d0">Separation of Powers</data>
+      <data key="d1">concept</data>
+      <data key="d2">Separation of Powers is a governance model where the legislative, executive, and judiciary branches are distinct and operate independently.</data>
+      <data key="d3">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080963</data>
+      <data key="d6" />
+    </node>
+    <node id="Judicial Review">
+      <data key="d0">Judicial Review</data>
+      <data key="d1">concept</data>
+      <data key="d2">Judicial Review is the power of courts to assess whether a law is in compliance with the Constitution.</data>
+      <data key="d3">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080963</data>
+      <data key="d6" />
+    </node>
+    <node id="Democracy">
+      <data key="d0">Democracy</data>
+      <data key="d1">concept</data>
+      <data key="d2">Democracy is a system of government in which power is vested in the people, who rule either directly or through freely elected representatives.</data>
+      <data key="d3">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080963</data>
+      <data key="d6" />
+    </node>
+    <node id="Navtej Singh Johar vs Union of India">
+      <data key="d0">Navtej Singh Johar vs Union of India</data>
+      <data key="d1">event</data>
+      <data key="d2">Navtej Singh Johar vs Union of India is a legal case decided in 2018 by the Supreme Court of India related to the decriminalization of homosexuality.</data>
+      <data key="d3">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080991</data>
+      <data key="d6" />
+    </node>
+    <node id="Section 377">
+      <data key="d0">Section 377</data>
+      <data key="d1">concept</data>
+      <data key="d2">Section 377 is a provision of the Indian Penal Code that historically criminalized consensual homosexual acts.</data>
+      <data key="d3">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080991</data>
+      <data key="d6" />
+    </node>
+    <node id="Article 14">
+      <data key="d0">Article 14</data>
+      <data key="d1">statute</data>
+      <data key="d2">Article 14 of the Indian Constitution ensures equality before the law and equal protection of the laws to all individuals.&lt;SEP&gt;Article 14 of the Indian Constitution ensures equality before the law and equal protection of the laws.&lt;SEP&gt;Article 14 of the Indian Constitution guarantees equality before the law and equal protection of the laws to all persons.</data>
+      <data key="d3">chunk-47564a09721c5945b7ce73cd55e71d9c&lt;SEP&gt;chunk-6f25faae2881506597d1a0b31f1ee071&lt;SEP&gt;chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081031</data>
+      <data key="d6" />
+    </node>
+    <node id="Article 21">
+      <data key="d0">Article 21</data>
+      <data key="d1">statute</data>
+      <data key="d2">Article 21 of the Indian Constitution guarantees the right to life and personal liberty, including the right to sexual orientation and gender identity.&lt;SEP&gt;Article 21 of the Indian Constitution guarantees the right to life and personal liberty, crucial in establishing the right to privacy.&lt;SEP&gt;Article 21 of the Indian Constitution guarantees the right to life and personal liberty.</data>
+      <data key="d3">chunk-47564a09721c5945b7ce73cd55e71d9c&lt;SEP&gt;chunk-6f25faae2881506597d1a0b31f1ee071&lt;SEP&gt;chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081031</data>
+      <data key="d6" />
+    </node>
+    <node id="Homosexuality">
+      <data key="d0">Homosexuality</data>
+      <data key="d1">concept</data>
+      <data key="d2">Homosexuality is the romantic or sexual attraction between members of the same sex, which was decriminalized in India following this ruling.</data>
+      <data key="d3">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080991</data>
+      <data key="d6" />
+    </node>
+    <node id="LGBTQ">
+      <data key="d0">LGBTQ</data>
+      <data key="d1">concept</data>
+      <data key="d2">LGBTQ refers to the community of individuals who identify as lesbian, gay, bisexual, transgender, and queer.</data>
+      <data key="d3">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080991</data>
+      <data key="d6" />
+    </node>
+    <node id="IPC 377">
+      <data key="d0">IPC 377</data>
+      <data key="d1">concept</data>
+      <data key="d2">IPC 377 refers to the specific section of the Indian Penal Code that criminalized homosexual acts prior to its being deemed unconstitutional.</data>
+      <data key="d3">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080991</data>
+      <data key="d6" />
+    </node>
+    <node id="Decriminalization">
+      <data key="d0">Decriminalization</data>
+      <data key="d1">concept</data>
+      <data key="d2">Decriminalization refers to the process of removing criminal penalties for consensual homosexual acts as ruled by the Supreme Court.</data>
+      <data key="d3">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769080991</data>
+      <data key="d6" />
+    </node>
+    <node id="K.S. Puttaswamy vs Union of India">
+      <data key="d0">K.S. Puttaswamy vs Union of India</data>
+      <data key="d1">event</data>
+      <data key="d2">K.S. Puttaswamy vs Union of India is a landmark legal case decided by the Supreme Court of India in 2017 concerning the right to privacy.</data>
+      <data key="d3">chunk-6f25faae2881506597d1a0b31f1ee071</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081011</data>
+      <data key="d6" />
+    </node>
+    <node id="Article 19">
+      <data key="d0">Article 19</data>
+      <data key="d1">statute</data>
+      <data key="d2">Article 19 of the Indian Constitution guarantees certain freedoms, including freedom of speech and expression.&lt;SEP&gt;Article 19 of the Indian Constitution guarantees certain freedoms including the right to practice any profession and to carry on any occupation, trade, or business.</data>
+      <data key="d3">chunk-6f25faae2881506597d1a0b31f1ee071&lt;SEP&gt;chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081031</data>
+      <data key="d6" />
+    </node>
+    <node id="Right to Privacy Judgment">
+      <data key="d0">Right to Privacy Judgment</data>
+      <data key="d1">event</data>
+      <data key="d2">The Right to Privacy Judgment is a significant ruling by a nine-judge Constitution Bench that established privacy as a fundamental right.</data>
+      <data key="d3">chunk-6f25faae2881506597d1a0b31f1ee071</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081011</data>
+      <data key="d6" />
+    </node>
+    <node id="Data Protection Law in India">
+      <data key="d0">Data Protection Law in India</data>
+      <data key="d1">concept</data>
+      <data key="d2">Data protection law in India refers to legal frameworks that protect personal data and privacy of individuals, which is supported by the right to privacy judgment.</data>
+      <data key="d3">chunk-6f25faae2881506597d1a0b31f1ee071</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081011</data>
+      <data key="d6" />
+    </node>
+    <node id="Vishaka vs State of Rajasthan">
+      <data key="d0">Vishaka vs State of Rajasthan</data>
+      <data key="d1">event</data>
+      <data key="d2">Vishaka vs State of Rajasthan is a landmark legal case decided in 1997 regarding sexual harassment in the workplace.</data>
+      <data key="d3">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081031</data>
+      <data key="d6" />
+    </node>
+    <node id="1997">
+      <data key="d0">1997</data>
+      <data key="d1">data</data>
+      <data key="d2">1997 is the year in which the Vishaka vs State of Rajasthan case was decided.</data>
+      <data key="d3">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081031</data>
+      <data key="d6" />
+    </node>
+    <node id="POSH Act 2013">
+      <data key="d0">POSH Act 2013</data>
+      <data key="d1">statute</data>
+      <data key="d2">The POSH Act 2013 is legislation enacted in India for the prevention of sexual harassment of women at the workplace.</data>
+      <data key="d3">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081031</data>
+      <data key="d6" />
+    </node>
+    <node id="Vishaka Guidelines">
+      <data key="d0">Vishaka Guidelines</data>
+      <data key="d1">concept</data>
+      <data key="d2">Vishaka Guidelines refers to the binding guidelines laid down by the Supreme Court to prevent sexual harassment in the workplace.</data>
+      <data key="d3">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081031</data>
+      <data key="d6" />
+    </node>
+    <node id="Women's Rights">
+      <data key="d0">Women's Rights</data>
+      <data key="d1">concept</data>
+      <data key="d2">Women's rights are the rights and entitlements claimed for women and girls worldwide, encompassing several legal, social, and cultural areas.</data>
+      <data key="d3">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081032</data>
+      <data key="d6" />
+    </node>
+    <node id="Sexual Harassment">
+      <data key="d0">Sexual Harassment</data>
+      <data key="d1">concept</data>
+      <data key="d2">Sexual harassment is an unlawful behavior involving unwanted sexual advances or conduct in the workplace that violates rights and creates a hostile environment.</data>
+      <data key="d3">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d4">unknown_source</data>
+      <data key="d5">1769081032</data>
+      <data key="d6" />
+    </node>
+    <edge source="Jacob Mathew" target="State of Punjab">
+      <data key="d7">1.0</data>
+      <data key="d8">Jacob Mathew is the plaintiff in the legal case against the State of Punjab concerning medical negligence.</data>
+      <data key="d9">legal case,plaintiff</data>
+      <data key="d10">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080931</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Jacob Mathew" target="Supreme Court of India">
+      <data key="d7">1.0</data>
+      <data key="d8">The Supreme Court of India presided over the legal proceedings involving Jacob Mathew against the State of Punjab.</data>
+      <data key="d9">judgment,legal proceeding</data>
+      <data key="d10">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080933</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="Medical Negligence">
+      <data key="d7">1.0</data>
+      <data key="d8">The Supreme Court of India established the legal standards and definitions surrounding medical negligence in its ruling.</data>
+      <data key="d9">judicial decision,standard of care</data>
+      <data key="d10">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080931</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="Doctor Liability">
+      <data key="d7">1.0</data>
+      <data key="d8">The Supreme Court of India addressed the concept of doctor liability in its decision on the case involving Jacob Mathew.</data>
+      <data key="d9">judicial ruling,legal responsibility</data>
+      <data key="d10">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080931</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="Malpractice">
+      <data key="d7">1.0</data>
+      <data key="d8">The ruling by the Supreme Court of India clarified the legal definitions and standards relating to malpractice.</data>
+      <data key="d9">legal definition,standard of care</data>
+      <data key="d10">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080932</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="Guidelines for Prosecuting Medical Professionals">
+      <data key="d7">1.0</data>
+      <data key="d8">The Supreme Court of India laid down specific guidelines for the prosecution of medical professionals in cases involving negligence.</data>
+      <data key="d9">legal standards,prosecution procedure</data>
+      <data key="d10">chunk-a2723a34b1cf1defbd170a1265d28b2a</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080932</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="Kesavananda Bharati vs State of Kerala">
+      <data key="d7">1.0</data>
+      <data key="d8">The Kesavananda Bharati vs State of Kerala case was decided by the Supreme Court of India, establishing key constitutional principles.</data>
+      <data key="d9">judicial authority,landmark case</data>
+      <data key="d10">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080964</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="Basic Structure Doctrine">
+      <data key="d7">1.0</data>
+      <data key="d8">The Supreme Court of India established the Basic Structure Doctrine through its ruling in the Kesavananda Bharati vs State of Kerala case.</data>
+      <data key="d9">constitutional law,legal principle</data>
+      <data key="d10">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080964</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="Navtej Singh Johar vs Union of India">
+      <data key="d7">1.0</data>
+      <data key="d8">Navtej Singh Johar vs Union of India is a legal case decided by the Supreme Court of India to address the decriminalization of homosexuality.</data>
+      <data key="d9">judicial ruling,legal case</data>
+      <data key="d10">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080992</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="Section 377">
+      <data key="d7">1.0</data>
+      <data key="d8">The Supreme Court of India interpreted Section 377 as unconstitutional concerning consensual homosexual acts.</data>
+      <data key="d9">decriminalization,legal interpretation</data>
+      <data key="d10">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080992</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="Article 21">
+      <data key="d7">1.0</data>
+      <data key="d8">The Supreme Court ruling recognized the protection of sexual orientation and gender identity under Article 21.</data>
+      <data key="d9">constitutional rights,legal protection</data>
+      <data key="d10">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080993</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="Decriminalization">
+      <data key="d7">1.0</data>
+      <data key="d8">The Supreme Court of India ruled for the decriminalization of homosexuality, altering legal standing and societal norms.</data>
+      <data key="d9">legal outcome,societal impact</data>
+      <data key="d10">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080993</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="K.S. Puttaswamy vs Union of India">
+      <data key="d7">1.0</data>
+      <data key="d8">The case was decided by the Supreme Court of India, establishing significant legal precedents.</data>
+      <data key="d9">judicial authority,landmark case</data>
+      <data key="d10">chunk-6f25faae2881506597d1a0b31f1ee071</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081012</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Supreme Court of India" target="Vishaka vs State of Rajasthan">
+      <data key="d7">1.0</data>
+      <data key="d8">The Supreme Court of India decided the case of Vishaka vs State of Rajasthan, establishing important legal precedents.</data>
+      <data key="d9">judicial authority,legal decision</data>
+      <data key="d10">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081032</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Basic Structure Doctrine" target="Fundamental Rights">
+      <data key="d7">1.0</data>
+      <data key="d8">The Basic Structure Doctrine includes Fundamental Rights as essential elements that cannot be amended.</data>
+      <data key="d9">constitutional framework,safeguard</data>
+      <data key="d10">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080965</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Basic Structure Doctrine" target="Secularism">
+      <data key="d7">1.0</data>
+      <data key="d8">Secularism is considered part of the Basic Structure Doctrine that cannot be altered through constitutional amendments.</data>
+      <data key="d9">constitutional framework,safeguard</data>
+      <data key="d10">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080965</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Basic Structure Doctrine" target="Federalism">
+      <data key="d7">1.0</data>
+      <data key="d8">Federalism is included in the Basic Structure Doctrine, emphasizing its protection from amendment.</data>
+      <data key="d9">constitutional framework,safeguard</data>
+      <data key="d10">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080966</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Basic Structure Doctrine" target="Separation of Powers">
+      <data key="d7">1.0</data>
+      <data key="d8">The doctrine includes Separation of Powers as a fundamental aspect of the Constitution that is inviolable.</data>
+      <data key="d9">constitutional framework,safeguard</data>
+      <data key="d10">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080966</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Basic Structure Doctrine" target="Judicial Review">
+      <data key="d7">1.0</data>
+      <data key="d8">Judicial Review is a crucial component of the Basic Structure Doctrine that ensures legal compliance with constitutional provisions.</data>
+      <data key="d9">constitutional framework,safeguard</data>
+      <data key="d10">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080967</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Basic Structure Doctrine" target="Democracy">
+      <data key="d7">1.0</data>
+      <data key="d8">Democracy is recognized as part of the Basic Structure Doctrine, affirming its importance in India's governance model.</data>
+      <data key="d9">constitutional framework,safeguard</data>
+      <data key="d10">chunk-07ddda276809bb9638857d460209326e</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080967</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Navtej Singh Johar vs Union of India" target="IPC 377">
+      <data key="d7">1.0</data>
+      <data key="d8">Navtej Singh Johar vs Union of India challenged the constitutionality of IPC 377 regarding consensual homosexual acts.</data>
+      <data key="d9">constitutional change,legal challenge</data>
+      <data key="d10">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080992</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Section 377" target="Homosexuality">
+      <data key="d7">1.0</data>
+      <data key="d8">Section 377 was used to criminalize homosexuality until the Supreme Court ruling.</data>
+      <data key="d9">criminalization,legal status</data>
+      <data key="d10">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080993</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Article 14" target="Right to Privacy Judgment">
+      <data key="d7">1.0</data>
+      <data key="d8">The Right to Privacy Judgment relates to Article 14 as it reinforces principles of equality and protection.</data>
+      <data key="d9">constitutional relation,equality</data>
+      <data key="d10">chunk-6f25faae2881506597d1a0b31f1ee071</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081013</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Article 14" target="Vishaka vs State of Rajasthan">
+      <data key="d7">1.0</data>
+      <data key="d8">The case found that sexual harassment at the workplace violates fundamental rights guaranteed under Article 14.</data>
+      <data key="d9">fundamental rights,legal significance</data>
+      <data key="d10">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081033</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Article 21" target="LGBTQ">
+      <data key="d7">1.0</data>
+      <data key="d8">Article 21 protects the rights of the LGBTQ community, affirming their sexual orientation and gender identity.</data>
+      <data key="d9">inclusivity,rights protection</data>
+      <data key="d10">chunk-47564a09721c5945b7ce73cd55e71d9c</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769080993</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Article 21" target="Right to Privacy Judgment">
+      <data key="d7">1.0</data>
+      <data key="d8">The Right to Privacy Judgment is rooted in Article 21, recognizing privacy as a fundamental right.</data>
+      <data key="d9">fundamental right,legal foundation</data>
+      <data key="d10">chunk-6f25faae2881506597d1a0b31f1ee071</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081012</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Article 21" target="Vishaka vs State of Rajasthan">
+      <data key="d7">1.0</data>
+      <data key="d8">The case determined that sexual harassment infringes upon women's rights to life and personal liberty as articulated in Article 21.</data>
+      <data key="d9">fundamental rights,life and liberty</data>
+      <data key="d10">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081034</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Article 19" target="Right to Privacy Judgment">
+      <data key="d7">1.0</data>
+      <data key="d8">The Right to Privacy Judgment connects to Article 19 by emphasizing personal liberties that contribute to the right to privacy.</data>
+      <data key="d9">personal freedoms,related rights</data>
+      <data key="d10">chunk-6f25faae2881506597d1a0b31f1ee071</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081014</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Article 19" target="Vishaka vs State of Rajasthan">
+      <data key="d7">1.0</data>
+      <data key="d8">The Supreme Court recognized that sexual harassment affects rights under Article 19 as it interferes with professional freedom.</data>
+      <data key="d9">fundamental rights,professional freedom</data>
+      <data key="d10">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081034</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Right to Privacy Judgment" target="Data Protection Law in India">
+      <data key="d7">1.0</data>
+      <data key="d8">The Right to Privacy Judgment serves as a foundational case for the development of data protection law in India.</data>
+      <data key="d9">legal impact,privacy protection</data>
+      <data key="d10">chunk-6f25faae2881506597d1a0b31f1ee071</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081013</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Vishaka vs State of Rajasthan" target="Vishaka Guidelines">
+      <data key="d7">1.0</data>
+      <data key="d8">The case established the Vishaka Guidelines, which provide a framework for preventing sexual harassment at the workplace.</data>
+      <data key="d9">legal framework,sexual harassment prevention</data>
+      <data key="d10">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081033</data>
+      <data key="d13" />
+    </edge>
+    <edge source="Vishaka vs State of Rajasthan" target="Sexual Harassment">
+      <data key="d7">1.0</data>
+      <data key="d8">The Vishaka vs State of Rajasthan case addresses the issue of sexual harassment and establishes legal standards for preventing it in the workplace.</data>
+      <data key="d9">legal context,workplace violation</data>
+      <data key="d10">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081035</data>
+      <data key="d13" />
+    </edge>
+    <edge source="POSH Act 2013" target="Vishaka Guidelines">
+      <data key="d7">1.0</data>
+      <data key="d8">The Vishaka Guidelines laid the foundation for the enactment of the POSH Act 2013 aimed at protecting women from sexual harassment at the workplace.</data>
+      <data key="d9">legal enforcement,workplace protection</data>
+      <data key="d10">chunk-ce42f602d723a9b1993320f7fd6fa376</data>
+      <data key="d11">unknown_source</data>
+      <data key="d12">1769081033</data>
+      <data key="d13" />
+    </edge>
+  </graph>
+</graphml>

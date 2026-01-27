@@ -1,0 +1,91 @@
+# Legal Lens - Project Steering Document
+
+## Overview
+Legal Lens is an AI-powered legal research chatbot for Indian law with **SSE streaming responses**.
+
+---
+
+## ✅ CHECKPOINTS (for context recovery)
+
+### Checkpoint 2 (2026-01-27 14:40)
+- **DocumentViewer Fix**: Added `/document/:id` endpoint for direct document lookup
+- **Issue was**: Search API only matched keywords, not doc_id
+- **Fix**: New GET `/api/document/:id` endpoint + updated DocumentViewer.tsx
+
+### Checkpoint 1 (2026-01-27 13:15)
+- **Chat SSE Working**: `/api/chat` endpoint returns 200, streaming works
+- **GROQ_API_KEY**: Set in `.env` file, loaded by Netlify dev
+
+### Key Files Modified
+| File | Status |
+|------|--------|
+| `api.js` | ✅ SSE `/chat` + `/document/:id` endpoints |
+| `ChatInterface.tsx` | ✅ Working with citations |
+| `DocumentViewer.tsx` | ✅ Fixed - uses /document/:id |
+| `.env` | ✅ GROQ_API_KEY set |
+
+---
+
+## Architecture
+
+### Technology Stack
+| Layer | Technology |
+|-------|------------|
+| Frontend | React + TypeScript + Vite |
+| Backend | Netlify Functions (Node.js) |
+| LLM | Groq API (llama-3.1-8b-instant) |
+| Data | 554 IPC→BNS mappings, 5 landmark judgments |
+
+### API Endpoints
+| Endpoint | Method | Status |
+|----------|--------|--------|
+| `/api/` | GET | ✅ Health check |
+| `/api/search` | POST | ✅ Working |
+| `/api/chat` | POST | ✅ SSE streaming working |
+| `/api/statute/{section}` | GET | ✅ Statute mapping |
+
+---
+
+## Feature Status
+
+### ✅ Implemented & Working
+- IPC→BNS statute mapping (554 sections)
+- Groq LLM integration
+- SSE streaming responses
+- Chatbot UI with message bubbles
+- Clickable inline citations `[Case](doc:id)`
+- Session-based message history (localStorage)
+
+### ⚠️ Needs Fix
+- DocumentViewer not displaying on citation click
+
+### ❌ Not Yet Implemented (Phase 3)
+- LangGraph orchestration
+- Intent detection
+- Safety guardrails
+- User authentication
+
+---
+
+## Local Development
+
+```bash
+# Start dev server (with API key in .env)
+cd LegalLensProject
+npx netlify dev
+# Open http://localhost:8888
+```
+
+**Required env vars:**
+- `GROQ_API_KEY` - set in `.env` file
+
+---
+
+## Key Files
+| File | Purpose |
+|------|---------|
+| [api.js](file:///c:/Users/RachitGarg/OneDrive%20-%20SP%20JAIN%20SCHOOL%20OF%20GLOBAL%20MANAGEMENT/Desktop/tiwari/Designs/LegalLensProject/netlify/functions/api.js) | SSE `/chat` endpoint |
+| [ChatInterface.tsx](file:///c:/Users/RachitGarg/OneDrive%20-%20SP%20JAIN%20SCHOOL%20OF%20GLOBAL%20MANAGEMENT/Desktop/tiwari/Designs/LegalLensProject/frontend/src/ChatInterface.tsx) | Chatbot UI |
+| [DocumentViewer.tsx](file:///c:/Users/RachitGarg/OneDrive%20-%20SP%20JAIN%20SCHOOL%20OF%20GLOBAL%20MANAGEMENT/Desktop/tiwari/Designs/LegalLensProject/frontend/src/DocumentViewer.tsx) | Document modal |
+| [App.tsx](file:///c:/Users/RachitGarg/OneDrive%20-%20SP%20JAIN%20SCHOOL%20OF%20GLOBAL%20MANAGEMENT/Desktop/tiwari/Designs/LegalLensProject/frontend/src/App.tsx) | Main app with toggle |
+| [.env](file:///c:/Users/RachitGarg/OneDrive%20-%20SP%20JAIN%20SCHOOL%20OF%20GLOBAL%20MANAGEMENT/Desktop/tiwari/Designs/LegalLensProject/.env) | API keys |

@@ -1,0 +1,87 @@
+{
+  "doc-a2723a34b1cf1defbd170a1265d28b2a": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "content_summary": "Title: Jacob Mathew vs State of Punjab (2005)\nYear: 2005\nCourt: Supreme Court of India\nStatutes: IPC 304A, BNS 106\nKeywords: medical negligence, doctor liability, malpractice, prosecution\n\nThis landmark case established the comprehensive law on medic...",
+    "content_length": 847,
+    "created_at": "2026-01-22T11:21:46.190838+00:00",
+    "updated_at": "2026-01-22T11:22:13.514475+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260122_152146_0ce93f66",
+    "metadata": {
+      "processing_start_time": 1769080906,
+      "processing_end_time": 1769080933
+    }
+  },
+  "doc-07ddda276809bb9638857d460209326e": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "content_summary": "Title: Kesavananda Bharati vs State of Kerala (1973)\nYear: 1973\nCourt: Supreme Court of India\nStatutes: Article 368, Article 13\nKeywords: basic structure, constitution, amendment, parliament power\n\nThe most important constitutional law case in India....",
+    "content_length": 546,
+    "created_at": "2026-01-22T11:22:13.538944+00:00",
+    "updated_at": "2026-01-22T11:22:48.266117+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260122_152213_3d5bd5ea",
+    "metadata": {
+      "processing_start_time": 1769080933,
+      "processing_end_time": 1769080968
+    }
+  },
+  "doc-47564a09721c5945b7ce73cd55e71d9c": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-47564a09721c5945b7ce73cd55e71d9c"
+    ],
+    "content_summary": "Title: Navtej Singh Johar vs Union of India (2018)\nYear: 2018\nCourt: Supreme Court of India\nStatutes: IPC 377, Article 14, Article 21\nKeywords: section 377, homosexuality, LGBTQ, decriminalization, privacy\n\nThe Supreme Court decriminalized homosexual...",
+    "content_length": 578,
+    "created_at": "2026-01-22T11:22:48.294146+00:00",
+    "updated_at": "2026-01-22T11:23:13.983623+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260122_152248_af15b240",
+    "metadata": {
+      "processing_start_time": 1769080968,
+      "processing_end_time": 1769080993
+    }
+  },
+  "doc-6f25faae2881506597d1a0b31f1ee071": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-6f25faae2881506597d1a0b31f1ee071"
+    ],
+    "content_summary": "Title: K.S. Puttaswamy vs Union of India (2017)\nYear: 2017\nCourt: Supreme Court of India\nStatutes: Article 21, Article 14, Article 19\nKeywords: privacy, fundamental right, article 21, data protection\n\nThe landmark Right to Privacy judgment. A nine-ju...",
+    "content_length": 569,
+    "created_at": "2026-01-22T11:23:14.023534+00:00",
+    "updated_at": "2026-01-22T11:23:34.494569+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260122_152314_878849a3",
+    "metadata": {
+      "processing_start_time": 1769080994,
+      "processing_end_time": 1769081014
+    }
+  },
+  "doc-ce42f602d723a9b1993320f7fd6fa376": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-ce42f602d723a9b1993320f7fd6fa376"
+    ],
+    "content_summary": "Title: Vishaka vs State of Rajasthan (1997)\nYear: 1997\nCourt: Supreme Court of India\nStatutes: Article 14, Article 19, Article 21, POSH Act 2013\nKeywords: sexual harassment, workplace, vishaka guidelines, women's rights\n\nLandmark case that laid down ...",
+    "content_length": 552,
+    "created_at": "2026-01-22T11:23:34.522356+00:00",
+    "updated_at": "2026-01-22T11:23:55.714055+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260122_152334_654057d0",
+    "metadata": {
+      "processing_start_time": 1769081014,
+      "processing_end_time": 1769081035
+    }
+  }
+}

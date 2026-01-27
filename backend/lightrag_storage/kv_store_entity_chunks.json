@@ -1,0 +1,376 @@
+{
+  "Jacob Mathew": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "count": 1,
+    "create_time": 1769080928,
+    "update_time": 1769080928,
+    "_id": "Jacob Mathew"
+  },
+  "State of Punjab": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "count": 1,
+    "create_time": 1769080928,
+    "update_time": 1769080928,
+    "_id": "State of Punjab"
+  },
+  "Supreme Court of India": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a",
+      "chunk-07ddda276809bb9638857d460209326e",
+      "chunk-47564a09721c5945b7ce73cd55e71d9c",
+      "chunk-6f25faae2881506597d1a0b31f1ee071",
+      "chunk-ce42f602d723a9b1993320f7fd6fa376"
+    ],
+    "count": 5,
+    "update_time": 1769081031,
+    "_id": "Supreme Court of India"
+  },
+  "IPC 304A": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "count": 1,
+    "create_time": 1769080928,
+    "update_time": 1769080928,
+    "_id": "IPC 304A"
+  },
+  "BNS 106": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "count": 1,
+    "create_time": 1769080928,
+    "update_time": 1769080928,
+    "_id": "BNS 106"
+  },
+  "Medical Negligence": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "count": 1,
+    "create_time": 1769080928,
+    "update_time": 1769080928,
+    "_id": "Medical Negligence"
+  },
+  "Doctor Liability": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "count": 1,
+    "create_time": 1769080928,
+    "update_time": 1769080928,
+    "_id": "Doctor Liability"
+  },
+  "Malpractice": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "count": 1,
+    "create_time": 1769080928,
+    "update_time": 1769080928,
+    "_id": "Malpractice"
+  },
+  "Prosecution": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "count": 1,
+    "create_time": 1769080929,
+    "update_time": 1769080929,
+    "_id": "Prosecution"
+  },
+  "2005": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "count": 1,
+    "create_time": 1769080929,
+    "update_time": 1769080929,
+    "_id": "2005"
+  },
+  "Court": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "count": 1,
+    "create_time": 1769080929,
+    "update_time": 1769080929,
+    "_id": "Court"
+  },
+  "Guidelines for Prosecuting Medical Professionals": {
+    "chunk_ids": [
+      "chunk-a2723a34b1cf1defbd170a1265d28b2a"
+    ],
+    "count": 1,
+    "create_time": 1769080929,
+    "update_time": 1769080929,
+    "_id": "Guidelines for Prosecuting Medical Professionals"
+  },
+  "Kesavananda Bharati vs State of Kerala": {
+    "chunk_ids": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "count": 1,
+    "create_time": 1769080962,
+    "update_time": 1769080962,
+    "_id": "Kesavananda Bharati vs State of Kerala"
+  },
+  "1973": {
+    "chunk_ids": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "count": 1,
+    "create_time": 1769080962,
+    "update_time": 1769080962,
+    "_id": "1973"
+  },
+  "Article 368": {
+    "chunk_ids": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "count": 1,
+    "create_time": 1769080962,
+    "update_time": 1769080962,
+    "_id": "Article 368"
+  },
+  "Article 13": {
+    "chunk_ids": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "count": 1,
+    "create_time": 1769080962,
+    "update_time": 1769080962,
+    "_id": "Article 13"
+  },
+  "Basic Structure Doctrine": {
+    "chunk_ids": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "count": 1,
+    "create_time": 1769080962,
+    "update_time": 1769080962,
+    "_id": "Basic Structure Doctrine"
+  },
+  "Fundamental Rights": {
+    "chunk_ids": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "count": 1,
+    "create_time": 1769080962,
+    "update_time": 1769080962,
+    "_id": "Fundamental Rights"
+  },
+  "Secularism": {
+    "chunk_ids": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "count": 1,
+    "create_time": 1769080962,
+    "update_time": 1769080962,
+    "_id": "Secularism"
+  },
+  "Federalism": {
+    "chunk_ids": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "count": 1,
+    "create_time": 1769080963,
+    "update_time": 1769080963,
+    "_id": "Federalism"
+  },
+  "Separation of Powers": {
+    "chunk_ids": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "count": 1,
+    "create_time": 1769080963,
+    "update_time": 1769080963,
+    "_id": "Separation of Powers"
+  },
+  "Judicial Review": {
+    "chunk_ids": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "count": 1,
+    "create_time": 1769080963,
+    "update_time": 1769080963,
+    "_id": "Judicial Review"
+  },
+  "Democracy": {
+    "chunk_ids": [
+      "chunk-07ddda276809bb9638857d460209326e"
+    ],
+    "count": 1,
+    "create_time": 1769080963,
+    "update_time": 1769080963,
+    "_id": "Democracy"
+  },
+  "Navtej Singh Johar vs Union of India": {
+    "chunk_ids": [
+      "chunk-47564a09721c5945b7ce73cd55e71d9c"
+    ],
+    "count": 1,
+    "create_time": 1769080991,
+    "update_time": 1769080991,
+    "_id": "Navtej Singh Johar vs Union of India"
+  },
+  "Section 377": {
+    "chunk_ids": [
+      "chunk-47564a09721c5945b7ce73cd55e71d9c"
+    ],
+    "count": 1,
+    "create_time": 1769080991,
+    "update_time": 1769080991,
+    "_id": "Section 377"
+  },
+  "Article 14": {
+    "chunk_ids": [
+      "chunk-47564a09721c5945b7ce73cd55e71d9c",
+      "chunk-6f25faae2881506597d1a0b31f1ee071",
+      "chunk-ce42f602d723a9b1993320f7fd6fa376"
+    ],
+    "count": 3,
+    "update_time": 1769081031,
+    "_id": "Article 14"
+  },
+  "Article 21": {
+    "chunk_ids": [
+      "chunk-47564a09721c5945b7ce73cd55e71d9c",
+      "chunk-6f25faae2881506597d1a0b31f1ee071",
+      "chunk-ce42f602d723a9b1993320f7fd6fa376"
+    ],
+    "count": 3,
+    "update_time": 1769081031,
+    "_id": "Article 21"
+  },
+  "Homosexuality": {
+    "chunk_ids": [
+      "chunk-47564a09721c5945b7ce73cd55e71d9c"
+    ],
+    "count": 1,
+    "create_time": 1769080991,
+    "update_time": 1769080991,
+    "_id": "Homosexuality"
+  },
+  "LGBTQ": {
+    "chunk_ids": [
+      "chunk-47564a09721c5945b7ce73cd55e71d9c"
+    ],
+    "count": 1,
+    "create_time": 1769080991,
+    "update_time": 1769080991,
+    "_id": "LGBTQ"
+  },
+  "IPC 377": {
+    "chunk_ids": [
+      "chunk-47564a09721c5945b7ce73cd55e71d9c"
+    ],
+    "count": 1,
+    "create_time": 1769080991,
+    "update_time": 1769080991,
+    "_id": "IPC 377"
+  },
+  "Decriminalization": {
+    "chunk_ids": [
+      "chunk-47564a09721c5945b7ce73cd55e71d9c"
+    ],
+    "count": 1,
+    "create_time": 1769080991,
+    "update_time": 1769080991,
+    "_id": "Decriminalization"
+  },
+  "K.S. Puttaswamy vs Union of India": {
+    "chunk_ids": [
+      "chunk-6f25faae2881506597d1a0b31f1ee071"
+    ],
+    "count": 1,
+    "create_time": 1769081011,
+    "update_time": 1769081011,
+    "_id": "K.S. Puttaswamy vs Union of India"
+  },
+  "Article 19": {
+    "chunk_ids": [
+      "chunk-6f25faae2881506597d1a0b31f1ee071",
+      "chunk-ce42f602d723a9b1993320f7fd6fa376"
+    ],
+    "count": 2,
+    "update_time": 1769081031,
+    "_id": "Article 19"
+  },
+  "Right to Privacy Judgment": {
+    "chunk_ids": [
+      "chunk-6f25faae2881506597d1a0b31f1ee071"
+    ],
+    "count": 1,
+    "create_time": 1769081011,
+    "update_time": 1769081011,
+    "_id": "Right to Privacy Judgment"
+  },
+  "Data Protection Law in India": {
+    "chunk_ids": [
+      "chunk-6f25faae2881506597d1a0b31f1ee071"
+    ],
+    "count": 1,
+    "create_time": 1769081011,
+    "update_time": 1769081011,
+    "_id": "Data Protection Law in India"
+  },
+  "Vishaka vs State of Rajasthan": {
+    "chunk_ids": [
+      "chunk-ce42f602d723a9b1993320f7fd6fa376"
+    ],
+    "count": 1,
+    "create_time": 1769081031,
+    "update_time": 1769081031,
+    "_id": "Vishaka vs State of Rajasthan"
+  },
+  "1997": {
+    "chunk_ids": [
+      "chunk-ce42f602d723a9b1993320f7fd6fa376"
+    ],
+    "count": 1,
+    "create_time": 1769081031,
+    "update_time": 1769081031,
+    "_id": "1997"
+  },
+  "POSH Act 2013": {
+    "chunk_ids": [
+      "chunk-ce42f602d723a9b1993320f7fd6fa376"
+    ],
+    "count": 1,
+    "create_time": 1769081031,
+    "update_time": 1769081031,
+    "_id": "POSH Act 2013"
+  },
+  "Vishaka Guidelines": {
+    "chunk_ids": [
+      "chunk-ce42f602d723a9b1993320f7fd6fa376"
+    ],
+    "count": 1,
+    "create_time": 1769081031,
+    "update_time": 1769081031,
+    "_id": "Vishaka Guidelines"
+  },
+  "Women's Rights": {
+    "chunk_ids": [
+      "chunk-ce42f602d723a9b1993320f7fd6fa376"
+    ],
+    "count": 1,
+    "create_time": 1769081032,
+    "update_time": 1769081032,
+    "_id": "Women's Rights"
+  },
+  "Sexual Harassment": {
+    "chunk_ids": [
+      "chunk-ce42f602d723a9b1993320f7fd6fa376"
+    ],
+    "count": 1,
+    "create_time": 1769081032,
+    "update_time": 1769081032,
+    "_id": "Sexual Harassment"
+  }
+}
